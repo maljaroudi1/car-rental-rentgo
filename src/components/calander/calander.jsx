@@ -77,10 +77,8 @@ export default function Cale()  {
         try {
                 const getCarIDResponse = await axios.get(`https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-cars/?email=${email}&carID=${carID}`);
                 const carExists = getCarIDResponse.data.exists;
-                console.log(carTimePickup)
-                console.log(carTimeReturn)
 
-                if(carExists){
+                if(!carExists){
 
                     toast.error("Car booked error");
                     toast.error("You can only book one car at a time!");

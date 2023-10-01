@@ -59,15 +59,17 @@ export default function Register() {
         setNotActive('active-progress');
         console.log(response.data);
         toast.success('Account created!');
-        document.body.style.overflow = 'auto';
+        // document.body.style.overflow = 'auto';
+        setTimeout(() => {
+          window.location.href= "/";
+        }, 5000);
+       
       }
     }
   };
 
 
-  const handleLoginPage = () => {
-    window.location.href= "/auth/login";
-  };
+
 
 
   const [notActive, setNotActive] = useState('');
@@ -77,66 +79,6 @@ export default function Register() {
   return (
     <>
       <ToastContainer/>
-      {/* <div className="parent-login-container">
-        <h1>Sign up with us to get 50% off
-       your first choice car</h1>
-        <div className="left-side">
-              <img src="" alt="" />
-        </div>
-        <div className="ver register-container">
-          <input
-            type="text"
-            placeholder="Enter Full Name"
-            autoComplete="off"
-            onChange={(e) => setName(e.target.value)}
-          />
-
-          <input
-            type="text"
-            placeholder="Enter Email"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-
-          <input
-            type="text"
-            name=""
-            id=""
-            placeholder="Enter Phone Number"
-            onChange={(e) => setPhone(e.target.value)}
-          />
-
-          <input
-            type="password"
-            name=""
-            id=""
-            placeholder="Password"
-            onChange={(e) => setPassword(e.target.value)}
-          />
-
-          <input
-            type="password"
-            name=""
-            id=""
-            placeholder="Confirm Password"
-            onChange={(e) => setConfirmPassword(e.target.value)}
-          />
-          <motion.button
-          className='btn signup-btn'
-           whileTap={{ scale: 0.9 }}
-           whileHover={{ backgroundColor: "#FD8800", color:"white" }}
-           transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          onClick={handleSubmit}>Create an account</motion.button>
-          <motion.button
-          className='btn signin-btn'
-           whileTap={{ scale: 0.9 }}
-           whileHover={{ backgroundColor: "#FD8800", color:"white" }}
-           transition={{ type: "spring", stiffness: 400, damping: 17 }}
-          onClick={handleLoginPage}>Already have an account? - Click here</motion.button>
-
-        </div>
-
-      </div> */}
-
 
       <div className="surface-ground px-4 py-8 md:px-6 lg:px-8 flex align-items-center justify-content-center white">
       <ProgressBar mode="indeterminate" style={{ height: '6px' }} className={`inactive ${notActive}`} ref={progressRef}></ProgressBar>
