@@ -75,10 +75,10 @@ const handleLogin = async (e) => {
 
 
 
-        // setTimeout(() => {
-        //   window.location.href = "/"
+        setTimeout(() => {
+          window.location.href = "/"
 
-        // }, 5000);
+        }, 5000);
 
 
       } else {
