@@ -74,7 +74,7 @@ export default function Booking()  {
            }
 
           try{
-               const response = await axios.post('https://car-rental-rentgo.vercel.app/customerinfo/customer-cars', {
+               const response = await axios.post('https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-cars', {
                    fullName,
                    email,
                    phone,
@@ -171,11 +171,11 @@ export default function Booking()  {
                             const selectedCarID = e.target.value;
                             const selectedCar = carData.find((car) => car.carID === selectedCarID);
                             if (selectedCar) {
-                            setTheCarID(selectedCar.carID);
-                            setCarName(selectedCar.carName);
-                            setCarYear(selectedCar.carYear);
-                            setCarType(selectedCar.carType);
-                            setAvailableCars(selectedCar.Available);
+                                setTheCarID(selectedCar.carID);
+                                setCarName(selectedCar.carName);
+                                setCarYear(selectedCar.carYear);
+                                setCarType(selectedCar.carType);
+                         
                             }
                         }}
                         value={carID}

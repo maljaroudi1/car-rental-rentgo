@@ -8,7 +8,7 @@ import Dashboard from '../components/pages/dashboard/dashboard'
  import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Locations from '../components/pages/locations/location'
 import Faq from '../components/pages/faq/faq'
-import Datatable from '../components/datatable/datatable'
+
 import Cookies from 'js-cookie'
 export default function routes() {
 
