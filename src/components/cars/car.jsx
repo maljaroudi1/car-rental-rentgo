@@ -36,12 +36,13 @@ const Cars = (props) => {
     const carType = props.carType;
     const carID = props.carID;
     const classForInfo = props.classForInfo;
+    const classForInfo2 = props.classForInfo2;
     const classForSvg = props.classForSvg;
     const carPassengers =  props.carPassengers;
     const carLiterKM = props.carLiterKM;
     const carDrivetrain = props.carDrivetrain;
     const classForCarContainer = props.classForCarContainer;
-
+    const carousalLine2 = props.carousalLine2;
 
     return (
         <>
@@ -82,8 +83,8 @@ const Cars = (props) => {
                                 
                         
                     </div>
-                    <div className='line'></div>
-                    <div className={`info-container ${classForInfo} ${classForCarContainer} `} style={{transform: ' translate3d(12rem, -8rem, 1rem)'}}>
+                    <div className={`line ${carousalLine2}`}></div>
+                    <div className={`info-container ${classForInfo2} ${classForCarContainer} `} style={{transform: ' translate3d(12rem, -8rem, 1rem)'}}>
                                 <div className="info">
                                     <FontAwesomeIcon icon={faGauge} className={`${classForSvg}`} />
                                     <h6><span>Passengers:</span>&nbsp; {carPassengers}</h6>

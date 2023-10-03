@@ -52,6 +52,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 
@@ -70,6 +72,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 
@@ -89,6 +93,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 
@@ -109,6 +115,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 
@@ -127,6 +135,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 
@@ -146,6 +156,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 
@@ -166,6 +178,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 
@@ -184,6 +198,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 
@@ -203,6 +219,8 @@ export default function Carousal() {
                             carPassengers= '2'
                             carLiterKM='10L/100KM'
                             carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
                             carYear="2023"
                             />
 

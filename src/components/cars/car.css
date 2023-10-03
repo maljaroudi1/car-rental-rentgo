@@ -49,7 +49,7 @@
   position: absolute;
 }
 .car .carousal-contain-line {
-  transform: translate3d(-11rem, -2rem, 1rem);
+  transform: translate3d(-13rem, -2rem, 1rem);
   width: 91%;
   background-color: var(--orange1);
   height: 0.2%;
@@ -245,174 +245,12 @@
   display: flex;
 }
 
-.form-container {
-  position: absolute;
-  width: 100%;
-}
-.form-container .create-car-form {
-  transform: translate3d(-0.5rem, 77rem, 1rem);
-  z-index: 55;
-  position: absolute;
-  justify-content: center;
-  display: none;
-  width: 100%;
-}
-.form-container .create-car-form h1 {
-  transform: translate3d(0.1rem, 1rem, 1rem);
-  color: rgb(0, 0, 0);
-}
-.form-container .create-car-form .img-container {
-  background-color: #ffc897;
-  width: 50%;
-  height: 80rem;
-  position: absolute;
-  margin-right: 64rem;
-  margin-top: -8rem;
-  opacity: 0.9;
-  overflow: hidden;
-}
-.form-container .create-car-form .img-container h1 {
-  transform: translate3d(12rem, 6rem, 1rem);
-  font-size: 4rem;
-  position: absolute;
-  width: 67%;
-}
-.form-container .create-car-form .img-container .img-styling {
-  position: absolute;
-}
-.form-container .create-car-form .img-container .imgOne {
-  width: 30%;
-  margin-left: -2rem;
-}
-.form-container .create-car-form .img-container .imgTwo {
-  margin-top: -5rem;
-}
-.form-container .create-car-form .img-container .img1 {
-  margin-top: 17rem;
-}
-.form-container .create-car-form .img-container .img2 {
-  margin-top: -25rem;
-  margin-left: 35rem;
-}
-.form-container .create-car-form .img-container img {
-  margin-top: -4rem;
-  margin-right: 84.5rem;
-}
-.form-container .create-car-form .video-container {
-  position: absolute;
-  width: 100%;
-  display: grid;
-}
-.form-container .create-car-form .video-container video {
-  -o-object-fit: cover;
-  object-fit: cover;
-  width: 50%;
-  height: 195%;
-  margin-top: -3.9rem;
-  margin-left: 0.5rem;
-  border-radius: 14px;
-  box-shadow: var(--box-shadow3);
-}
-.form-container .create-car-form .center-items {
-  z-index: 2;
-  transform: translate3d(30rem, 0rem, 1rem);
-  position: absolute;
-  opacity: 0.9;
-  width: 100%;
-  justify-content: center;
-  display: grid;
-  width: 35%;
-  border-radius: 15px;
-}
-.form-container .create-car-form .center-items select {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 2rem;
-  border: 0.1px orange solid;
-  font-style: italic;
-  background-color: white;
-}
-.form-container .create-car-form .center-items input {
-  width: 100%;
-  padding: 1rem;
-  margin-top: 2rem;
-  outline-color: orange;
-  border: 0.1px orange solid;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.form-container .create-car-form .center-items input::-moz-placeholder {
-  color: black;
-  font-weight: 900;
-  font-style: italic;
-}
-.form-container .create-car-form .center-items input::placeholder {
-  color: black;
-  font-weight: 900;
-  font-style: italic;
-}
-.form-container .create-car-form .center-items .react-calendar {
-  padding: 1rem;
-}
-.form-container .create-car-form .center-items .label {
-  margin-left: 11rem;
-  margin-left: 11rem;
-  position: absolute;
-  margin-top: 22.2rem;
-  color: black;
-  font-size: 1rem !important;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-}
-.form-container .create-car-form .center-items .label1 {
-  margin-top: 33.8rem;
-  margin-left: 24.9rem;
-}
-.form-container .create-car-form .center-items .label2 {
-  margin-top: 38.9rem;
-  margin-left: 25rem;
-}
-.form-container .create-car-form .center-items .submit {
-  border-radius: 5px;
-  background-color: white;
-  width: 100%;
-  height: 3rem;
-  color: #FD8800;
-  font-weight: 900;
-  border: 0px;
-  box-shadow: var(--box-shadow1);
-  cursor: pointer;
-  border: solid 1px var(--main-color-orange);
-  margin-top: 1rem;
-}
-.form-container .create-car-form .center-items .close-btn {
-  border: solid 1px red !important;
-  color: red;
-  margin-bottom: 1rem;
-}
-.form-container .create-car-form .center-items .close-btn svg {
-  margin-right: 1rem;
-  position: absolute;
-  font-size: 1.2rem;
-  transform: translate3d(-2rem, 0rem, 1rem);
+.carousalLine2 {
+  margin-left: 8rem !important;
 }
 
-.background-overlay {
-  background-color: white;
-  position: fixed;
-  display: none;
-  z-index: 10;
-  width: 100%;
-  height: 100%;
-  margin-top: 24rem;
-  scale: 15;
-}
-
-.car-form-active {
-  display: flex !important;
-}
-
-.background-active {
-  display: block !important;
+.classForInfo {
+  transform: translate3d(14rem, -8rem, 1rem) !important;
 }
 
 .book-btn-mobile {
