@@ -46,7 +46,7 @@ const handleSignOut2 = () => {
 
 const items2 = [
     {
-      label: (isLoggedIn && email != 'null' ? email : (isLoggedIn && email2 !== null ? email2 : 'Sign-in')),
+      label: (isLoggedIn && email != 'null' ? email : (isLoggedIn && email2 !== 'null' ? email2 : 'Sign-in')),
       icon: isLoggedIn ? 'pi pi-fw pi-user' : 'pi pi-fw pi-sign-in',
       url: isLoggedIn ? '/dashboard ' : '/auth/login',
     },
