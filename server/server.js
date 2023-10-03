@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 const compression = require('compression');
-// require('dotenv').config();
+require('dotenv').config();
 app.use(compression());
 
 
@@ -13,7 +13,7 @@ app.use(compression());
 
 
 
-const port = process.env.PORT || 65532;
+const port = process.env.PORT || 5000;
 
 const payload = {
   userId: 1
@@ -162,12 +162,20 @@ const UserGoogle = mongoose.model('google-users-info', UserSchemaGoogle);
 
 
 //Always declare cors above all get and post requests
+// //Production
+// app.use(cors({
+//   origin:'https://car-rental-rentgo.vercel.app',
+//   allowedHeaders: 'Content-Type,Authorization',
+//   allowMethods: '*'
+// }));
+
+
+//testing
 app.use(cors({
-  origin:'https://car-rental-rentgo.vercel.app',
+  origin:'http://localhost:5173',
   allowedHeaders: 'Content-Type,Authorization',
   allowMethods: '*'
 }));
-
 
 
 
@@ -179,16 +187,7 @@ app.use(cors({
 app.use(bodyParser());
 
 
-//post google login info
-app.post("/google-users-info", async (req, res) => {
-  try {
-    const newGoogleUser = await UserGoogle.create(req.body);
-    res.status(201).json(newGoogleUser);
-  } catch (err) {
-    console.error(err);
-    res.status(500).json({ message: 'Error creating user.' });
-  }
-});
+
 
 //Login and check if user is already created
 app.post('/customerinfo/customer-infos', async (req, res) => {
@@ -282,26 +281,6 @@ app.get('/customerinfo/customer-cars', async (req, res) => {
 });
 
 
-//Get request to check and validate if carID is in database and post data must mmatch axios post on front end "/customer-cars"
-
-
-
-
-// app.get('/users/customer-info', async (req, res) => {
-//   const { uniqueID, uniqueURLToken } = req.query;
-
-//   try {
-
-//     if(){
-//       res.json({test: true});
-//     } else {
-//       res.json({ test: false });
-//     }
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).json({error: 'An error occurred Unique ID not found' })
-//   }
-// });
 
 //Post to save customer car booking information
 app.post('/customerinfo/customer-cars', async (req, res) => {

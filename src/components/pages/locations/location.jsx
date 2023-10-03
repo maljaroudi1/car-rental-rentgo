@@ -162,7 +162,11 @@ export default function Locations() {
 
     return(
     <>
-    <NavBar/>
+
+    <div style={{position: 'relative', zIndex:'1'}}>
+       <NavBar/>
+    </div>
+
 
 
 
@@ -180,13 +184,13 @@ export default function Locations() {
             </div>
           </div>
           {/* Use infobox */}
-          <div className="col-12 md:col-6 change-width-media768 ">
+          <div className="col-12 md:col-6 change-width-media768 map-box ">
             <button className="locatebtn" onClick={handleLocateButtonClick}>Locate My Position</button>
               <GoogleMap
               zoom={10}
               center={currentPosition || { lat: 43.57466208215668, lng: -79.6477375403969 }}
               mapContainerClassName='map-container laptop'
-              mapContainerStyle={{width:'50%', height: '70%', position: 'absolute', marginLeft: '-0.5rem'}}
+              mapContainerStyle={{width:'50%', height: '84%', position: 'absolute', marginTop: '-6.5rem'}}
               >
               {currentPosition && <MarkerF position={currentPosition}  />}
 
@@ -282,7 +286,7 @@ export default function Locations() {
 
 
 
-      <div className="footer-container-location" style={{marginTop:'30rem'}}>
+      <div className="footer-container-location" style={{marginTop:'-20rem', marginBottom: '-1rem', marginLeft: '-1rem ', marginRight: '-1rem', position: 'relative', zIndex:'1'}}>
         <Footer/>
       </div>
  

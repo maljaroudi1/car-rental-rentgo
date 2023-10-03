@@ -17,6 +17,7 @@ import "primereact/resources/primereact.min.css";
 import "primeflex/primeflex.css";
 import 'primeicons/primeicons.css';
 
+
 export default function Dashboard() {
 
 
@@ -34,7 +35,10 @@ export default function Dashboard() {
         setSelected(buttonName);
 
     }
-    let email = (Cookies.get('email'));
+    let email = Cookies.get('email');
+    const isLoggedIn = Cookies.get('isLoggedIn')
+    const  GoogleName = Cookies.get('GoogleName');
+    const GoogleEmail = Cookies.get('GoogleEmail')
     const [username, domain] = email.split('@');
     const [firstletter, domail] = email[0].toUpperCase();
 
@@ -219,7 +223,10 @@ try{
                             {/**Display username and login picturem which has a condotional for google login or default picture for non-google */}
                             <li className="border-top-1 surface-border lg:border-top-none lg:ml-auto">
                                 <a className="p-ripple flex p-3 lg:px-3 lg:py-2 align-items-center hover-surface-100 font-medium border-round cursor-pointer transition-duration-150 transition-colors">
-                                <div  className="mr-3 lg:mr-0" alt="avatar-f-1" style={{ width: '32px', height: '32px' }} >Username:  {`${username}`}</div>
+
+                                <div  className="mr-3 lg:mr-0" alt="avatar-f-1" style={{ width: '32px', height: '32px' }} >
+                                    Username:  {` ${isLoggedIn && username !== 'null' ? username : GoogleName}` }
+                                </div>
                                 <div className="block lg:hidden">
                                     <div className="text-900 font-medium">Josephine Lillard</div>
                                     <span className="text-600 font-medium text-sm">Marketing Specialist</span>
@@ -237,23 +244,26 @@ try{
                                         <div className="font-medium text-3xl text-900 mb-3">Profile</div>
                                         <div className="text-500 mb-5">Here you will find your profile information</div>
                                         <ul className="list-none p-0 m-0 border-top-1 border-300">
-                                        <li className="flex align-items-center py-3 px-2 flex-wrap surface-ground">
-                                            <div className="text-500 w-full md:w-2 font-medium">Email</div>
-                                            <div className="text-900 w-full md:w-10">
-                                                {`${email}`}
-                                            </div>
-                                        </li>
-                                        {filteredCars.map((filteredCar) => (
-                                        <li className="flex align-items-center py-3 px-2 flex-wrap" key={filteredCar.id }>
-                                            <div className="text-500 w-full md:w-2 font-medium">Current Bookings</div>
-                                            <div className="text-900 w-full md:w-10 line-height-3">
-                                            {CarBooked ? filteredCar.carName : ''}
-                                            </div>
-                                        </li>
-                                        ))}
-
-
-
+                                            <li className="flex align-items-center py-3 px-2 flex-wrap surface-ground">
+                                                <div className="text-500 w-full md:w-2 font-medium">{`${isLoggedIn && email !== 'null' ? 'Email' : 'Name'}`}</div>
+                                                <div className="text-900 w-full md:w-10">
+                                                    {`${isLoggedIn && email !== 'null' ? email : GoogleName}`}
+                                                </div>
+                                            </li>
+                                            <li className="flex align-items-center py-3 px-2 flex-wrap ">
+                                                <div className="text-500 w-full md:w-2 font-medium">{`${isLoggedIn && GoogleName !== 'null' ? 'Email' : ''}`}</div>
+                                                <div className="text-900 w-full md:w-10">
+                                                    {`${isLoggedIn && GoogleEmail !== 'null' ? GoogleEmail : ''}`}
+                                                </div>
+                                            </li>
+                                            {filteredCars.map((filteredCar) => (
+                                            <li className="flex align-items-center py-3 px-2 flex-wrap surface-ground" key={filteredCar.id }>
+                                                <div className="text-500 w-full md:w-2 font-medium">Current Bookings</div>
+                                                <div className="text-900 w-full md:w-10 line-height-3">
+                                                {CarBooked ? filteredCar.carName : ''}
+                                                </div>
+                                            </li>
+                                            ))}
                                         </ul>
                                     </div>
                                 </div>

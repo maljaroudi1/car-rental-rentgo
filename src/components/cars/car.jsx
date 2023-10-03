@@ -40,7 +40,7 @@ const Cars = (props) => {
     const carPassengers =  props.carPassengers;
     const carLiterKM = props.carLiterKM;
     const carDrivetrain = props.carDrivetrain;
-
+    const classForCarContainer = props.classForCarContainer;
 
 
     return (
@@ -48,6 +48,7 @@ const Cars = (props) => {
 
               <div className="car" id={`${carID}`} type={`${carType}`}>
                     <div className="top-half"></div>
+               
                     <div className="overlay"></div>
                     <img src={carImg}alt="" />
                 
@@ -78,6 +79,27 @@ const Cars = (props) => {
                                     <FontAwesomeIcon icon={faCar} className={`${classForSvg}`}/>
                                     <h6><span>Year:</span>&nbsp; {carYear}</h6>
                                 </div>
+                                
+                        
+                    </div>
+                    <div className='line'></div>
+                    <div className={`info-container ${classForInfo} ${classForCarContainer} `} style={{transform: ' translate3d(12rem, -8rem, 1rem)'}}>
+                                <div className="info">
+                                    <FontAwesomeIcon icon={faGauge} className={`${classForSvg}`} />
+                                    <h6><span>Passengers:</span>&nbsp; {carPassengers}</h6>
+                                </div>
+                            
+                                <div className="info">
+                                    <FontAwesomeIcon icon={faGear} className={`${classForSvg}`} />
+                                    <h6><span>KM/L:</span>&nbsp; {carLiterKM}</h6>
+                                </div>
+                            
+                                <div className="info">
+                                    <FontAwesomeIcon icon={faFillDrip} className={`${classForSvg}`}/>
+                                    <h6><span>Drivetrain:</span>&nbsp; {carDrivetrain}</h6>
+                                </div>
+                       
+                                
                         
                     </div>
 

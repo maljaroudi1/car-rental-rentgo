@@ -21,6 +21,7 @@ const carData = [
         carPassengers: '2',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -40,6 +41,7 @@ const carData = [
         carPassengers: '2',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -59,6 +61,7 @@ const carData = [
         carPassengers: '6',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -79,6 +82,7 @@ const carData = [
         carPassengers: '5',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -99,6 +103,7 @@ const carData = [
         carPassengers: '2',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
 
@@ -120,6 +125,7 @@ const carData = [
         carPassengers: '6',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -140,6 +146,7 @@ const carData = [
         carPassengers: '5',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -160,6 +167,7 @@ const carData = [
         carPassengers: '6',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -180,6 +188,7 @@ const carData = [
         carPassengers: '5',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -200,6 +209,7 @@ const carData = [
         carPassengers: '5',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -220,6 +230,7 @@ const carData = [
         carPassengers: '5',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -240,6 +251,7 @@ const carData = [
         carPassengers: '2',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -260,6 +272,7 @@ const carData = [
         carPassengers: '6',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -280,6 +293,7 @@ const carData = [
         carPassengers: '5',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     } ,
     {
@@ -300,6 +314,7 @@ const carData = [
         carPassengers: '2',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -320,6 +335,7 @@ const carData = [
         carPassengers: '2',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     },
     {
@@ -340,6 +356,7 @@ const carData = [
         carPassengers: '2',
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
+        classForCarContainer: 'custom-info-container',
         buttonName: 'Rent now'
     }
 

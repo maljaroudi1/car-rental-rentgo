@@ -50,13 +50,15 @@ const handleLogin = async (e) => {
     toast.error('Invalid Email!');
   } else {
     try {
-      const response = await axios.post('https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-infos', {
+      // const response = await axios.post('https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-infos', {
+        const response = await axios.post('http://localhost:5000/customerinfo/customer-infos', {
         email,
         password,
         type: 'POST',
       });
 
-      const response2 = await axios.get(`https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-infos?email=${email}`, {
+      // const response2 = await axios.get(`https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-infos?email=${email}`, {
+      const response2 = await axios.get(`http://localhost:5000/customerinfo/customer-infos?email=${email}`, {
         email
       });
 
@@ -135,8 +137,6 @@ const GoogleAPiKey2 = import.meta.env.VITE_CLIENTID;
     const auth2 = gapi.auth2.getAuthInstance();
 
 
-
-
     auth2.signIn().then((googleUser) => {
       const userPicture = googleUser.getBasicProfile().getImageUrl();
       const userName = googleUser.getBasicProfile().getName();
@@ -154,20 +154,26 @@ const GoogleAPiKey2 = import.meta.env.VITE_CLIENTID;
       userPictureElement.src = userPicture;
       userNameElement.textContent = `Profile: ${userName}`;
       userEmailElement.textContent = `User Email: ${userEmail}`;
+      try{
+        Cookies.set('GoogleName', userName);
+        Cookies.set('GoogleEmail', userEmail);
+        Cookies.set('GooglePicture', userPicture);
+
+        const date = new Date();
+        const hours = 24; // set the expiration time too 24 hours
+        const settingTime = date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
+        Cookies.set('isLoggedIn', 'true', { expires: new Date(settingTime)});
+        setNotActive('active-progress');
+        setTimeout(() => {
+          window.location.href= "/"
+        }, 5000);
+
+      }catch(error){
+        console.log(error)
+      }
     });
 
 
-    try{
-      const response = await axios.post('https://car-rental-rentgo.vercel.app/google-users-info', {
-        userNameGoogle,
-        userEmailGoogle,
-        userIDGoogle,
-
-      });
-      console.log(response);
-    }catch(err){
-      console.log(err);
-    }
 
   };
 
@@ -179,12 +185,6 @@ const GoogleAPiKey2 = import.meta.env.VITE_CLIENTID;
 
 
 
-      <div className="google-user-info">
-          <img id='userIMG'src="" alt="" />
-          <h2 id='userName'></h2>
-          <h3 id='userEmail'></h3>
-
-      </div>
 
       <div>
       <ProgressBar mode="indeterminate" style={{ height: '6px' }} className={`inactive ${notActive}`} ref={progressRef}></ProgressBar>

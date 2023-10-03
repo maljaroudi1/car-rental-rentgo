@@ -49,6 +49,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 
@@ -64,6 +67,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 
@@ -80,6 +86,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 
@@ -97,6 +106,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 
@@ -112,6 +124,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 
@@ -128,6 +143,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 
@@ -145,6 +163,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 
@@ -160,6 +181,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 
@@ -176,6 +200,9 @@ export default function Carousal() {
                             carousalLine={<line className='carousal-contain-line'></line>}
                             handleEvent={handleLinkClick}
                             buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
                             carYear="2023"
                             />
 

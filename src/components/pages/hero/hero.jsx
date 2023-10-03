@@ -108,7 +108,7 @@ export default function Hero()  {
                             </Link>
 
                             <motion.button
-                            style={{transform: 'translateX(2rem)'}}
+                            style={{transform: 'translateX(6rem)'}}
                                 className='sell-btn'
                                 whileTap={{ scale: 0.9 }}
                                 whileHover={{ backgroundColor: "#FD8800", color:"white" }}
@@ -248,8 +248,9 @@ export default function Hero()  {
                 </div>
                 <CarousalContainer/>
 
-                 <Footer/>
-
+                <div className="footer-container-location" style={{ marginBottom: '-1rem', marginLeft: '-1rem ', marginRight: '-1rem'}}>
+                    <Footer/>
+                </div>
 
         </>
     );

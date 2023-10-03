@@ -48,109 +48,6 @@ import {faGauge, faGear, faFillDrip, faCar} from '@fortawesome/free-solid-svg-ic
 export default function  carContainer()   {
 
 
-            //    //creat car
-            //    const [fullName, setNewCarFullName] = useState("");
-            //    const [phone, setNewCarPhone] = useState("");
-            //    const [email, setNewCarEmail] = useState("");
-            //    const [carName, setCarName] = useState("");
-            //    const [carType, setCarType] = useState('');
-            //    const [carYear, setCarYear] = useState('');
-            //    const [carID, setTheCarID] = useState("");
-            //    const [locationCar, setLocationCar] = useState("");
-            //    const [carPickUp, setNewCarPickUp] = useState(new Date());
-            //    const [carReturn, setNewCarReturn] = useState(new Date());
-            //    const [availableCars, setAvailableCars] = useState([]);
-
-            //    const emailRegex = /^[\w.-]+@([\w-]+\.)+[\w-]{2,4}$/;
-            //    const nameRegex = /^[A-Za-z\s\-']+$/;
-            //    const onSubmitCreateCar = async () => {
-            //        if (
-            //            fullName.trim() === '' ||
-            //            phone.trim() === '' ||
-            //            email.trim() === '' ||
-            //            carPickUp === '' ||
-            //            carReturn === ''
-            //        )
-            //        {
-            //            toast.error('Please fill out all required fields.');
-            //        }
-            //         if(!emailRegex.test(email)){
-            //             toast.error('Please enter a valid email!.');
-            //         }
-
-            //         if(!nameRegex.test(fullName)){
-            //             toast.error('Please enter a valid name!.');
-            //             return;
-            //         }
-
-            //        try{
-            //             const response = await axios.post('http://localhost:5000/customerinfo/customer-cars', {
-            //                 fullName,
-            //                 email,
-            //                 phone,
-            //                 carName,
-            //                 carYear,
-            //                 carType,
-            //                 carID,
-            //                 locationCar,
-            //                 carPickUp,
-            //                 carReturn,
-
-            //             })
-            //             const theCarID = response.data.carID;
-            //             const theLocation = response.data.locationCar;
-            //             const thePickUpDate = response.data.carPickUp;
-            //             const theReturnDate = (response.data.carReturn);
-            //             const TheReturnDateCookie = new Date(response.data.carReturn);
-
-
-            //             const TheReturnCookie = Math.floor(TheReturnDateCookie.getTime() / 1000); // Convert milliseconds to seconds
-            //             console.log(theReturnDate)
-            //             console.log(TheReturnCookie)
-
-            //             Cookies.set('CarID', JSON.stringify(theCarID), { expires: theReturnDate });
-            //             Cookies.set('Location', JSON.stringify(theLocation), { expires: theReturnDate });
-            //             Cookies.set('PickupDate', JSON.stringify(thePickUpDate), { expires: theReturnDate });
-            //             Cookies.set('ReturnDate', JSON.stringify(theReturnDate), { expires: theReturnDate });
-
-            //              // EmailJS implementation would be around here, where the customer would receive an email on form submisson,
-            //              // would return customer pickupdate/returndate using backend and all booking information
-            //             toast.success('Car Booked, check your email!');
-            //             // setTimeout(() => {
-            //             //     window.location.href = '/booking/successful';
-            //             //   }, 5000);
-
-
-            //        }
-            //        catch(err){
-            //             console.log(err)
-            //             toast.error(`error:${err}`);
-            //        }
-
-
-
-
-            //     }
-
-
-
-            //      //Close Form
-
-            //            const [toggleForm] = useState(1);
-            //            const carFormRef = useRef(null);
-            //            const backgroundRef = useRef(null);
-
-            //            function handleCloseForm(){
-            //                carFormRef.current.classList.toggle('car-form-active');
-            //                backgroundRef.current.classList.toggle('background-active');
-            //                document.body.style.overflowY = 'hidden';
-            //            }
-            //            function closeForm() {
-            //             carFormRef.current.classList.toggle('car-form-active');
-            //             backgroundRef.current.classList.toggle('background-active');
-            //             document.body.style.overflowY = 'auto';
-            //            }
-
 
 
 
@@ -225,7 +122,7 @@ export default function  carContainer()   {
                             suggestions={car}
                             completeMethod={search}
                             onChange={(e) => setSearch(e.value)} placeholder='Search'
-                            style={{transform: "translate3d(17rem, 1.5rem, 1rem)", overflow: 'Auto'}}
+                            // style={{transform: "translate3d(17rem, 1.5rem, 1rem)", overflow: 'Auto'}}
                             />
 
                             <SelectButton
@@ -233,16 +130,16 @@ export default function  carContainer()   {
                             onChange={(e) => setSortCars(e.value)}
                             optionLabel="carType"
                             options={sortByCarType}
-                            className="select-btn"
-                            style={{transform: "translate3d(1rem,-1.5rem,1rem)"}}
+                            className="select-btn filter"
+                            // style={{transform: "translate3d(1rem,-1.5rem,1rem)"}}
                             />
 
                             <SelectButton
                             value={sortByDecAcen}
                             onChange={(e) => setSortByDecAcen(e.value)}
                             options={sortByCarAcen2.map((option) => option.label)}
-                            className="select-btn"
-                            style={{ transform: "translate3d(0.9rem, -0.5rem, 1rem)" }}
+                            className="select-btn sort"
+                            // style={{ transform: "translate3d(0.9rem, -0.5rem, 1rem)" }}
                             />
 
                     </div>
@@ -331,7 +228,7 @@ export default function  carContainer()   {
                                                 <p className="more-info mt-1 mb-0 text-600 font-medium text-sm" style={{transform: 'translate3D(-3rem,0rem,1rem)'}} >More Info <i className='pi pi-info-circle' style={{ fontSize: '0.8rem', cursor: 'pointer' }}    onClick={() => toggleInformation(car.carID)} /></p>
                                             </div>
 
-                                            <div className="toggle-btn ml-auto" style={{ transform: 'translateX(-105px)', marginTop: '1rem' }}>
+                                            <div className="toggle-btn ml-auto" style={{ transform: 'translateX(-125px)', marginTop: '1rem' }}>
                                                 <button className=" p-button p-component p-button-text p-button-plain p-button-rounded p-button-icon-only"
                                                     onClick={() => toggleInformation(car.carID)}
                                                 >
@@ -392,6 +289,9 @@ export default function  carContainer()   {
                                     classForSvg={car.classForSvg}
                                     carYear={car.carYear}
                                     carType={car.carType}
+                                    carLiterKM={car.carLiterKM}
+                                    carPassengers={car.carPassengers}
+                                    carDrivetrain={car.carDrivetrain}
                                     buttonName={car.buttonName}
                                    />
 

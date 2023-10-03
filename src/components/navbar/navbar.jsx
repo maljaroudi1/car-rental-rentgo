@@ -57,7 +57,7 @@ const Navbar = (props) => {
 
 
             <div>
-                <div className="surface-0 py-8">
+                <div className="py-8">
                     <div className="bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap padding-bottom" style={{marginTop: '-8.5rem', marginLeft: '-1rem', marginRight: '-1rem'}}>
                         <div className="font-bold mr-8">🔥 Hot Deals!</div>
                          {/* Make not hidden 43*/}

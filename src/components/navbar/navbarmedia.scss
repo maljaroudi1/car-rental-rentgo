@@ -335,9 +335,8 @@
 @media screen and (max-width: 500px) {
     .nav-bar-under {
         width: 106% !important;
-        .select-btn{
-            transform: translate3d(0rem, -1.5rem, 1rem) !important;
-        }
+        height: 14rem !important;
+  
     }
     .hero{
         .hero-text-container{
@@ -503,10 +502,16 @@
         }
       }
 
+        .filter{
+            margin-top: -1rem !important;
+        }
+        .sort{
+            margin-top: 1rem !important;
+        }
 
         //search bar
         .p-autocomplete{
-            transform: translate3d(8rem, 7rem, 1rem) !important;
+            transform: translate3d(8rem, 10rem, 1rem) !important;
         }
 
         //navigation
