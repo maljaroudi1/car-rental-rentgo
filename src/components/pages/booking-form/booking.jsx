@@ -27,9 +27,9 @@ export default function Booking()  {
     const [carType, setCarType] = useState('');
     const [carYear, setCarYear] = useState('');
     const [carID, setTheCarID] = useState("");
-    const [carPickUp, setCarPickup] = useState(new Date());
-    const [carReturn, setCarReturn] = useState(new Date());
-    const [selectedLocation, setSelectedLocation] = useState('');
+    const [carTimePickup, setCarPickup] = useState(new Date());
+    const [carTimeReturn, setCarReturn] = useState(new Date());
+    const [locationCar, setSelectedLocation] = useState('');
     const locations = [
         { id: 1, name: '3500 Mavis Rd, Mississauga, ON L5C 1T8' },
         { id: 2, name: '55 King St W, Toronto, ON M5H 3C2' },
@@ -75,15 +75,15 @@ export default function Booking()  {
 
           try{
                const response = await axios.post('https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-cars', {
-                fullName,
-                email,
-                carName,
-                carYear,
-                carType,
-                carID,
-                carPickUp,
-                carReturn,
-                selectedLocation,
+                    fullName,
+                    email,
+                    carName,
+                    carYear,
+                    carType,
+                    carID,
+                    locationCar,
+                    carTimePickup,
+                    carTimeReturn
                })
                const theCarID = response.data.carID;
                const theLocation = response.data.locationCar;
