@@ -162,20 +162,20 @@ const UserGoogle = mongoose.model('google-users-info', UserSchemaGoogle);
 
 
 //Always declare cors above all get and post requests
-// //Production
-// app.use(cors({
-//   origin:'https://car-rental-rentgo.vercel.app',
-//   allowedHeaders: 'Content-Type,Authorization',
-//   allowMethods: '*'
-// }));
-
-
-//testing
+//Production
 app.use(cors({
-  origin:'http://localhost:5173',
+  origin:'https://car-rental-rentgo.vercel.app',
   allowedHeaders: 'Content-Type,Authorization',
   allowMethods: '*'
 }));
+
+
+//testing
+// app.use(cors({
+//   origin:'http://localhost:5173',
+//   allowedHeaders: 'Content-Type,Authorization',
+//   allowMethods: '*'
+// }));
 
 
 
