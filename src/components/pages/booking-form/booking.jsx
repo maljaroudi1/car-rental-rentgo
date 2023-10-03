@@ -91,7 +91,7 @@ export default function Booking()  {
                const thePickUpDate = response.data.carPickUp;
                const theReturnDate = (response.data.carReturn);
                const TheReturnDateCookie = new Date(response.data.carReturn);
-
+               const CarBooked = true;
 
                const TheReturnCookie = Math.floor(TheReturnDateCookie.getTime() / 1000); // Convert milliseconds to seconds
                console.log(theReturnDate)
@@ -101,7 +101,7 @@ export default function Booking()  {
                Cookies.set('Location', JSON.stringify(theLocation), { expires: theReturnDate });
                Cookies.set('PickupDate', JSON.stringify(thePickUpDate), { expires: theReturnDate });
                Cookies.set('ReturnDate', JSON.stringify(theReturnDate), { expires: theReturnDate });
-
+               Cookies.set('CarBooked', JSON.stringify(CarBooked), { expires: theReturnDate });
                 // EmailJS implementation would be around here, where the customer would receive an email on form submisson,
                 // would return customer pickupdate/returndate using backend and all booking information
                toast.success('Car Booked, check your email!');
