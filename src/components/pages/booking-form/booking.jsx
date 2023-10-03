@@ -75,16 +75,15 @@ export default function Booking()  {
 
           try{
                const response = await axios.post('https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-cars', {
-                   fullName,
-                   email,
-                   phone,
-                   carName,
-                   carYear,
-                   carType,
-                   carID,
-                   carPickUp,
-                   carReturn,
-
+                fullName,
+                email,
+                carName,
+                carYear,
+                carType,
+                carID,
+                carPickUp,
+                carReturn,
+                selectedLocation,
                })
                const theCarID = response.data.carID;
                const theLocation = response.data.locationCar;
@@ -102,6 +101,7 @@ export default function Booking()  {
                Cookies.set('PickupDate', JSON.stringify(thePickUpDate), { expires: theReturnDate });
                Cookies.set('ReturnDate', JSON.stringify(theReturnDate), { expires: theReturnDate });
                Cookies.set('CarBooked', JSON.stringify(CarBooked), { expires: theReturnDate });
+
                 // EmailJS implementation would be around here, where the customer would receive an email on form submisson,
                 // would return customer pickupdate/returndate using backend and all booking information
                toast.success('Car Booked, check your email!');
