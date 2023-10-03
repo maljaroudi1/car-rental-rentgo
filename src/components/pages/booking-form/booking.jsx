@@ -74,7 +74,17 @@ export default function Booking()  {
            }
 
           try{
-               const response = await axios.post('https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-cars', {
+            const getCarIDResponse = await axios.get(`https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-cars/?email=${email}&carID=${carID}`);
+            const carExists = getCarIDResponse.data.exists;
+            if(!carExists){
+
+                toast.error("Car booked error");
+                toast.error("You can only book one car at a time!");
+            } else {
+                //Production
+                const response = await axios.post('https://car-rental-rentgo-72pv.vercel.app/customerinfo/customer-cars', {
+                //testing
+                // const response = await axios.post('http://localhost:5000/customerinfo/customer-cars', {
                     fullName,
                     email,
                     carName,
@@ -84,32 +94,28 @@ export default function Booking()  {
                     locationCar,
                     carTimePickup,
                     carTimeReturn
-               })
-               const theCarID = response.data.carID;
-               const theLocation = response.data.locationCar;
-               const thePickUpDate = response.data.carPickUp;
-               const theReturnDate = (response.data.carReturn);
-               const TheReturnDateCookie = new Date(response.data.carReturn);
-               const CarBooked = true;
+                });
 
-               const TheReturnCookie = Math.floor(TheReturnDateCookie.getTime() / 1000); // Convert milliseconds to seconds
-               console.log(theReturnDate)
-               console.log(TheReturnCookie)
-
-               Cookies.set('CarID', JSON.stringify(theCarID), { expires: theReturnDate });
-               Cookies.set('Location', JSON.stringify(theLocation), { expires: theReturnDate });
-               Cookies.set('PickupDate', JSON.stringify(thePickUpDate), { expires: theReturnDate });
-               Cookies.set('ReturnDate', JSON.stringify(theReturnDate), { expires: theReturnDate });
-               Cookies.set('CarBooked', JSON.stringify(CarBooked), { expires: theReturnDate });
-
-                // EmailJS implementation would be around here, where the customer would receive an email on form submisson,
-                // would return customer pickupdate/returndate using backend and all booking information
-               toast.success('Car Booked, check your email!');
-               setTimeout(() => {
-                   window.location.href = '/';
-                 }, 5000);
+                toast.success('Car Booked, check your email!');
+                const theCarID = response.data.carID;
+                const theLocation = response.data.locationCar;
+                const thePickUpDate = new Date(response.data.carTimePickup);
+                const theReturnDate = new Date(response.data.carTimeReturn);
+                const CarBooked = true;
 
 
+                // console.log(response.data);
+                // console.log(theCarID)
+                // console.log(theLocation)
+                // console.log(thePickUpDate)
+
+
+                Cookies.set('CarID', JSON.stringify(theCarID), { expires: theReturnDate });
+                Cookies.set('Location', JSON.stringify(theLocation), { expires: theReturnDate });
+                Cookies.set('PickupDate', JSON.stringify(thePickUpDate), { expires: theReturnDate });
+                Cookies.set('ReturnDate', JSON.stringify(theReturnDate), { expires: theReturnDate });
+                Cookies.set('CarBooked', JSON.stringify(CarBooked), { expires: theReturnDate });
+            }
           }
           catch(err){
                console.log(err)
