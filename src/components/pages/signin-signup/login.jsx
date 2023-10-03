@@ -138,23 +138,15 @@ const GoogleAPiKey2 = import.meta.env.VITE_CLIENTID;
 
 
     auth2.signIn().then((googleUser) => {
-      const userPicture = googleUser.getBasicProfile().getImageUrl();
-      const userName = googleUser.getBasicProfile().getName();
-      const userEmail = googleUser.getBasicProfile().getEmail();
-
-      setGoogleUserName(googleUser.getBasicProfile().getName())
-      setGoogleEmail(googleUser.getBasicProfile().getEmail())
-      setGoogleID( googleUser.getBasicProfile().getId())
-
-      const userPictureElement = document.getElementById('userIMG');
-      const userNameElement = document.getElementById('userName');
-      const userEmailElement = document.getElementById('userEmail');
-
-      // Update the content of the div elements
-      userPictureElement.src = userPicture;
-      userNameElement.textContent = `Profile: ${userName}`;
-      userEmailElement.textContent = `User Email: ${userEmail}`;
       try{
+        const userPicture = googleUser.getBasicProfile().getImageUrl();
+        const userName = googleUser.getBasicProfile().getName();
+        const userEmail = googleUser.getBasicProfile().getEmail();
+
+        setGoogleUserName(googleUser.getBasicProfile().getName())
+        setGoogleEmail(googleUser.getBasicProfile().getEmail())
+        setGoogleID( googleUser.getBasicProfile().getId())
+
         Cookies.set('GoogleName', userName);
         Cookies.set('GoogleEmail', userEmail);
         Cookies.set('GooglePicture', userPicture);
@@ -164,11 +156,13 @@ const GoogleAPiKey2 = import.meta.env.VITE_CLIENTID;
         const settingTime = date.setTime(date.getTime() + (hours * 60 * 60 * 1000));
         Cookies.set('isLoggedIn', 'true', { expires: new Date(settingTime)});
         setNotActive('active-progress');
+        toast.success('Google login successful!');
         setTimeout(() => {
           window.location.href= "/"
         }, 5000);
 
       }catch(error){
+        toast.success('Google login failed!');
         console.log(error)
       }
     });
