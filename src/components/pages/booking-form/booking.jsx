@@ -58,8 +58,8 @@ export default function Booking()  {
               fullName.trim() === '' ||
               phone.trim() === '' ||
               email.trim() === '' ||
-              carPickUp === '' ||
-              carReturn === ''
+              carTimePickup === '' ||
+              carTimeReturn === ''
           )
           {
               toast.error('Please fill out all required fields.');
@@ -196,14 +196,14 @@ export default function Booking()  {
                         <label htmlFor="pickup" className="font-medium text-900">
                         Pickup Date
                         </label>
-                        <Calendar value={carPickUp} onChange={(e) => setCarPickup(e.value)} showTime hourFormat="12" optionLabel='carName'/>
+                        <Calendar value={carTimePickup} onChange={(e) => setCarPickup(e.value)} showTime hourFormat="12" optionLabel='carName'/>
                     </div>
 
                     <div className="field mb-4 col-12 md:col-6">
                         <label htmlFor="return" className="font-medium text-900">
                         Return Date
                         </label>
-                        <Calendar value={carReturn} onChange={(e) => setCarReturn(e.value)} showTime hourFormat="12" />
+                        <Calendar value={carTimeReturn} onChange={(e) => setCarReturn(e.value)} showTime hourFormat="12" />
                     </div>
 
                     <div className="field mb-4 col-12 md:col-6">
@@ -212,7 +212,7 @@ export default function Booking()  {
                         </label>
                         <Dropdown
                             placeholder='Select a location'
-                            value={selectedLocation}
+                            value={locationCar}
                             options={locations}
                             optionLabel='name'
                              onChange={(e) =>  setSelectedLocation(e.target.value)}
