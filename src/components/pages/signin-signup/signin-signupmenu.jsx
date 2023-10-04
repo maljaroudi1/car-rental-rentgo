@@ -69,7 +69,7 @@ const items2 = [
 
   return (
     <>
-      <div>
+      <div className='portal-conatiner'>
         <Menu popup   model={items2} ref={menuSignInRef} />
         <Button
           id={isLoggedIn ? 'profile' : 'sign-up'}

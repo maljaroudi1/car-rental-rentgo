@@ -57,7 +57,7 @@ const Navbar = (props) => {
 
 
             <div>
-                <div className="py-8">
+                <div className="py-8 largel-navbar">
                     <div className="bg-bluegray-900 text-gray-100 p-3 flex justify-content-between lg:justify-content-center align-items-center flex-wrap padding-bottom" style={{marginTop: '-8.5rem', marginLeft: '-1rem', marginRight: '-1rem'}}>
                         <div className="font-bold mr-8">🔥 Hot Deals!</div>
                          {/* Make not hidden 43*/}
@@ -73,7 +73,7 @@ const Navbar = (props) => {
                     </div>
                 </div>
 
-                <div className="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static border-bottom-1 border-gray-800" style={{ minHeight: '84px', marginTop: '-9.5rem', marginLeft: '-1rem', marginRight: '-1rem' }}>
+                <div className="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static border-bottom-1 border-gray-800 largel-navbar" style={{ minHeight: '84px', marginTop: '-9.5rem', marginLeft: '-1rem', marginRight: '-1rem' }}>
                     <img src={logo} alt="CarRental" height="40" className="mr-0 lg:mr-6 logo-white" />
 
                     <a className="p-ripple cursor-pointer block lg:hidden text-gray-400 hover-menu"

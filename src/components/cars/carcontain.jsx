@@ -19,8 +19,6 @@ import { Ripple } from 'primereact/ripple';
 PrimeReactContext.ripple = true;
 
 
-
-
 //theme
 import "primereact/resources/themes/lara-light-indigo/theme.css";
 //core
@@ -41,6 +39,8 @@ import { SelectButton } from 'primereact/selectbutton';
 
 import axios from 'axios'
 
+
+import { RadioButton } from 'primereact/radiobutton';
 
 
 import {faGauge, faGear, faFillDrip, faCar} from '@fortawesome/free-solid-svg-icons'
@@ -104,7 +104,7 @@ export default function  carContainer()   {
                     window.location.href = '/booking';
                   }
 
-
+///
 
 
     return(
@@ -116,13 +116,15 @@ export default function  carContainer()   {
 
                     <div className="nav-bar-under " style={{paddingBottom: '-5px', paddingTop: '-5px'}}>
 
+
+
                             <AutoComplete field="name"
                             className='p-ripple card p-fluid '
                             value={search}
                             suggestions={car}
                             completeMethod={search}
                             onChange={(e) => setSearch(e.value)} placeholder='Search'
-                            // style={{transform: "translate3d(17rem, 1.5rem, 1rem)", overflow: 'Auto'}}
+                            style={{transform: "translate3d(16rem, 1rem, 1rem)"}}
                             />
 
                             <SelectButton
@@ -131,7 +133,7 @@ export default function  carContainer()   {
                             optionLabel="carType"
                             options={sortByCarType}
                             className="select-btn filter"
-                            // style={{transform: "translate3d(1rem,-1.5rem,1rem)"}}
+                            style={{transform: "translateY(-2rem)"}}
                             />
 
                             <SelectButton
@@ -139,7 +141,7 @@ export default function  carContainer()   {
                             onChange={(e) => setSortByDecAcen(e.value)}
                             options={sortByCarAcen2.map((option) => option.label)}
                             className="select-btn sort"
-                            // style={{ transform: "translate3d(0.9rem, -0.5rem, 1rem)" }}
+                            style={{ transform: " translateY(-5rem)" , marginLeft: '90rem'}}
                             />
 
                     </div>

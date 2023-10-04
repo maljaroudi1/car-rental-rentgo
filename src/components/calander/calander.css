@@ -70,10 +70,10 @@
   position: absolute;
 }
 .container .car-input {
-  transform: translate3d(-18.5rem, 5rem, 1rem) !important;
+  transform: translate3d(-18.5rem, 5rem, 1rem);
 }
 .container .email {
-  transform: translateX(-18.5rem) !important;
+  transform: translateX(-18.5rem);
 }
 .container select {
   padding: 1rem;
@@ -89,7 +89,7 @@
   position: absolute;
 }
 .container .location {
-  transform: translate3d(-33rem, 5rem, 1rem) !important;
+  transform: translate3d(-33rem, 5rem, 1rem);
 }
 .container line {
   height: 1%;

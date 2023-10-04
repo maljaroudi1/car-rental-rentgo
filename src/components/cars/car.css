@@ -139,7 +139,6 @@
 }
 
 .p-autocomplete {
-  transform: translate3d(16rem, 0.5rem, 1rem);
   z-index: 2;
 }
 

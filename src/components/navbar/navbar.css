@@ -18,6 +18,67 @@
   .grid .change-width-media768 .laptop {
     width: 46.1% !important;
   }
+  .largel-navbar {
+    margin-right: -14rem !important;
+  }
+  .portal-conatiner .custom-btn {
+    transform: translate3d(89rem, 5.5rem, 1rem) !important;
+  }
+  .hero .hero-blob {
+    transform: translate3d(13rem, 10px, 10px) !important;
+  }
+  .hero .hero-blob svg {
+    transform: translate3d(53rem, -9rem, 10px) !important;
+  }
+  .hero .hero-btn {
+    transform: translate3d(6rem, 27rem, 1rem) !important;
+  }
+  .hero .working-steps {
+    margin-top: -14rem !important;
+    margin-left: 11rem !important;
+  }
+  .hero .about-us {
+    margin-top: 9rem !important;
+  }
+  .hero .about-us h1 {
+    transform: translate3d(-17.1rem, -15rem, 10px) !important;
+    width: 56% !important;
+    margin-top: 7rem !important;
+  }
+  .hero .about-us p {
+    width: 59% !important;
+    margin-top: -15rem !important;
+    margin-left: 47rem !important;
+  }
+  .container {
+    height: 9.5rem !important;
+    width: 81% !important;
+  }
+  .container input {
+    width: 20% !important;
+    transform: translateX(-28rem) !important;
+  }
+  .container .email {
+    transform: translateX(-12.5rem) !important;
+  }
+  .container select {
+    width: 20% !important;
+  }
+  .container .car-input {
+    transform: translate3d(-12.5rem, 5rem, 1rem) !important;
+  }
+  .container line {
+    margin-left: 22rem !important;
+  }
+  .container .p-calendar {
+    transform: translate3d(43rem, 2rem, 1rem) !important;
+  }
+  .container .location {
+    transform: translate3d(-28rem, 5rem, 1rem) !important;
+  }
+  .container a {
+    transform: translate3d(16rem, 28px, 10px) !important;
+  }
 }
 @media screen and (max-width: 1024px) {
   .grid .change-width-media768 {
@@ -711,7 +772,7 @@
   padding-bottom: -5px;
   transform: translate3d(-1rem, 0rem, 1rem);
   width: 102%;
-  height: 2%;
+  height: 5rem;
   position: relative;
 }
 .nav-bar-under .p-selectbutton {

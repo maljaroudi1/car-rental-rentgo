@@ -78,6 +78,75 @@
             }
         }
     }
+    .largel-navbar{
+        margin-right: -14rem !important;
+    }
+    .portal-conatiner{
+        .custom-btn {
+            transform: translate3d(89rem, 5.5rem, 1rem) !important;
+        }
+    }
+    .hero{
+        .hero-blob{
+            transform: translate3d(13rem, 10px, 10px) !important;
+            svg{
+                transform: translate3d(53rem, -9rem, 10px) !important;
+            }
+        }
+        .hero-btn{
+            transform: translate3d(6rem, 27rem, 1rem) !important;
+        }
+        .working-steps {
+            margin-top: -14rem !important;
+            margin-left: 11rem !important;
+        }
+        .about-us{
+            margin-top: 9rem !important;
+            h1{
+                transform: translate3d(-17.1rem, -15rem, 10px) !important;
+                width: 56% !important;
+                margin-top: 7rem !important;
+            }
+            p{
+                width: 59% !important;
+                margin-top: -15rem !important;
+                margin-left: 47rem !important;
+            }
+        }
+    }
+    .container{
+        height: 9.5rem !important;
+        width: 81% !important;
+        input{
+            width: 20% !important;
+            transform: translateX(-28rem) !important;
+        }
+        .email {
+            transform: translateX(-12.5rem) !important;
+        }
+        select{
+            width: 20% !important;
+        }
+        .car-input {
+            transform: translate3d(-12.5rem, 5rem, 1rem) !important;
+        }
+        line{
+            margin-left: 22rem !important;
+        }
+        .p-calendar {
+            transform: translate3d(43rem, 2rem, 1rem) !important;
+        }
+        .location{
+            transform: translate3d(-28rem, 5rem, 1rem) !important;
+        }
+        a {
+            transform: translate3d(16rem, 28px, 10px) !important;
+        }
+
+
+    }
+
+
 }
 
 
