@@ -85,17 +85,17 @@ const Cars = (props) => {
                     </div>
                     <div className={`line ${carousalLine2}`}></div>
                     <div className={`info-container ${classForInfo2} ${classForCarContainer} `} style={{transform: ' translate3d(12rem, -8rem, 1rem)'}}>
-                                <div className="info">
+                                <div className="info carousal-info-conatiner">
                                     <FontAwesomeIcon icon={faGauge} className={`${classForSvg}`} />
                                     <h6><span>Passengers:</span>&nbsp; {carPassengers}</h6>
                                 </div>
                             
-                                <div className="info">
+                                <div className="info carousal-info-conatiner">
                                     <FontAwesomeIcon icon={faGear} className={`${classForSvg}`} />
                                     <h6><span>KM/L:</span>&nbsp; {carLiterKM}</h6>
                                 </div>
                             
-                                <div className="info">
+                                <div className="info carousal-info-conatiner">
                                     <FontAwesomeIcon icon={faFillDrip} className={`${classForSvg}`}/>
                                     <h6><span>Drivetrain:</span>&nbsp; {carDrivetrain}</h6>
                                 </div>

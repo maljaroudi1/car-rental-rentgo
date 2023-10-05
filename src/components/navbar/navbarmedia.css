@@ -22,7 +22,7 @@
     margin-right: -14rem !important;
   }
   .portal-conatiner .custom-btn {
-    transform: translate3d(89rem, 5.5rem, 1rem) !important;
+    transform: translate3d(75rem, 5.5rem, 1rem) !important;
   }
   .hero .hero-blob {
     transform: translate3d(13rem, 10px, 10px) !important;
@@ -35,20 +35,22 @@
   }
   .hero .working-steps {
     margin-top: -14rem !important;
-    margin-left: 11rem !important;
+  }
+  .hero .working-steps .icon-container .icon p {
+    width: 280px !important;
   }
   .hero .about-us {
     margin-top: 9rem !important;
   }
   .hero .about-us h1 {
-    transform: translate3d(-17.1rem, -15rem, 10px) !important;
-    width: 56% !important;
+    transform: translate3d(-20.1rem, -15rem, 10px) !important;
+    width: 52% !important;
     margin-top: 7rem !important;
   }
   .hero .about-us p {
-    width: 59% !important;
+    width: 43% !important;
     margin-top: -15rem !important;
-    margin-left: 47rem !important;
+    margin-left: 44rem !important;
   }
   .container {
     height: 9.5rem !important;
@@ -79,8 +81,104 @@
   .container a {
     transform: translate3d(16rem, 28px, 10px) !important;
   }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car {
+    transform: translate3d(8.5rem, 0rem, 1rem) !important;
+    width: 18% !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .carousal-contain-line {
+    transform: translate3d(-10rem, -2rem, 1rem) !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .carousalLine2 {
+    margin-left: 5rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container .carousal-info-conatiner {
+    transform: translateX(-3rem) !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container .info svg {
+    transform: translate3d(-8.2rem, -1.7rem, 1rem) !important;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .portal-conatiner .custom-btn {
+    transform: translate3d(70rem, 5.5rem, 1rem) !important;
+  }
+  .hero .hero-blob {
+    transform: translate3d(1rem, 25rem, 10px) !important;
+  }
+  .hero .working-steps {
+    margin-top: 61rem !important;
+  }
+  .hero .working-steps .icon-container {
+    display: block !important;
+  }
+  .hero .working-steps .icon-container .icon {
+    width: 4rem !important;
+    margin-left: 37rem !important;
+    margin-right: 37rem !important;
+  }
+  .hero .about-us h1 {
+    font-size: 2.5rem !important;
+    margin-left: 60rem !important;
+    width: 44% !important;
+  }
+  .hero .about-us p {
+    margin-left: 40rem !important;
+  }
+  .hero .container {
+    transform: translate3d(28rem, 57rem, 1rem) !important;
+    height: 44.5rem !important;
+    width: 30% !important;
+  }
+  .hero .container .container-display {
+    display: block !important;
+    font-size: 2.5rem !important;
+    text-align: center !important;
+    position: absolute !important;
+  }
+  .hero .container input {
+    width: 73% !important;
+    transform: translateX(-0.5rem) !important;
+    margin-top: 9rem !important;
+  }
+  .hero .container .email {
+    transform: translateX(-0.5rem) !important;
+    margin-top: 14rem !important;
+  }
+  .hero .container select {
+    width: 73% !important;
+  }
+  .hero .container .car-input {
+    transform: translate3d(-0.5rem, 19rem, 1rem) !important;
+    z-index: 1;
+  }
+  .hero .container .location {
+    transform: translate3d(-0.5rem, 24rem, 1rem) !important;
+    z-index: 1;
+  }
+  .hero .container span {
+    position: absolute !important;
+    transform: translate3d(0rem, 19rem, 1rem) !important;
+    width: 76% !important;
+    margin-top: 1rem;
+  }
+  .hero .container #returntime {
+    margin-top: 6rem !important;
+  }
+  .hero .container line {
+    display: none !important;
+  }
+  .hero .container a {
+    transform: translate3d(0rem, 39rem, 10px) !important;
+  }
+  .hero .container a .book-btn {
+    width: 17rem !important;
+    height: 3.5rem !important;
+  }
 }
 @media screen and (max-width: 1024px) {
+  .portal-conatiner .custom-btn {
+    transform: translate3d(50rem, 5.5rem, 1rem) !important;
+  }
   .grid .change-width-media768 {
     width: 100% !important;
     margin-left: 0rem !important;
@@ -96,8 +194,55 @@
     margin-left: -1rem !important;
     border: 1px solid lightgray;
   }
+  .hero .container {
+    transform: translate3d(19rem, 57rem, 1rem) !important;
+    width: 39% !important;
+  }
+  .hero .working-steps .icon-container .icon {
+    margin-left: 29rem !important;
+    margin-right: 29rem !important;
+  }
+  .hero .about-us h1 {
+    margin-left: 53rem !important;
+    width: 44% !important;
+  }
+  .hero .about-us p {
+    margin-left: 33rem !important;
+    width: 38% !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car {
+    transform: translate3d(14rem, 0rem, 1rem) !important;
+    width: 15% !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .carousal-contain-line {
+    transform: translate3d(-8.5rem, -2rem, 1rem) !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .carousalLine2 {
+    margin-left: 3rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container {
+    margin-left: -2rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container .info svg {
+    transform: translate3d(-7rem, -1.7rem, 1rem) !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car classForInfo {
+    transform: translate3d(13rem, -8rem, 1rem) !important;
+  }
+  .carousel .slide img {
+    margin-top: 1rem !important;
+  }
 }
 @media screen and (max-width: 769px) {
+  .portal-conatiner {
+    display: none !important;
+  }
+  .bg-gray-900 .tablet {
+    transform: translate3d(-12rem, 10px, 10px) !important;
+  }
+  .bg-gray-900 .tabletqueri2 {
+    margin-left: -6rem !important;
+  }
   .change-width-media768 {
     width: 100%;
   }
@@ -121,126 +266,67 @@
   .map-container {
     width: 100% !important;
   }
-  .hero .hero-text-container {
-    transform: translate3d(2rem, 3rem, -1rem) !important;
-  }
-  .hero .hero-text-container h1 {
-    font-size: 1.4rem;
-  }
-  .hero .hero-text-container p {
-    width: 87% !important;
-  }
-  .hero .hero-btn {
-    transform: translate3d(1rem, 4rem, 1rem) !important;
-  }
-  .hero .postiton-btn {
-    margin-top: 1rem !important;
-    margin-left: 2rem !important;
+  .hero .container {
+    transform: translate3d(11rem, 57rem, 1rem) !important;
+    width: 50% !important;
   }
   .hero .hero-blob {
-    transform: translate3d(1rem, -4rem, 1rem) !important;
+    transform: translate3d(1rem, 25rem, 10px) !important;
   }
   .hero .hero-blob svg {
-    width: 100% !important;
-    transform: translate3d(13rem, 18rem, 10px) !important;
+    width: 87% !important;
+    transform: translate3d(25rem, -1rem, 10px) !important;
   }
   .hero .hero-blob img {
-    width: 30rem !important;
-    transform: translate3d(-30rem, 18rem, 10px) !important;
+    width: 41rem !important;
+    transform: translate3d(-36rem, 2rem, 10px) !important;
   }
   .hero .working-steps {
-    margin-top: 62rem !important;
-    padding-bottom: 31rem !important;
-  }
-  .hero .working-steps h2 {
-    font-size: 3rem !important;
-    text-align: center;
-  }
-  .hero .working-steps .icon-container .map {
-    transform: translate3d(34rem, -4rem, 1rem) !important;
+    margin-top: 86rem !important;
   }
   .hero .working-steps .icon-container .icon {
-    box-shadow: var(--box-shadow2) !important;
-  }
-  .hero .working-steps .icon-container .icon h5 {
-    font-size: 1.5rem !important;
-  }
-  .hero .working-steps .icon-container .icon p {
-    font-size: 1rem !important;
-  }
-  .hero .working-steps .icon-container .calander {
-    transform: translate3d(0px, 10rem, 1rem) !important;
-    margin-bottom: 20rem !important;
-  }
-  .hero .working-steps .icon-container .car-icon {
-    transform: translate3d(-545px, 20rem, 1rem) !important;
-    margin-bottom: 15rem !important;
-  }
-  .hero .container {
-    width: 70% !important;
-    display: grid !important;
-    height: 41rem !important;
-    transform: translate3d(3.5rem, 36rem, 1rem) !important;
-    align-items: center !important;
-  }
-  .hero .container .mobile {
-    display: block !important;
-    text-align: center;
-  }
-  .hero .container .Toastify {
-    transform: translate3d(0rem, -5rem, 1rem) !important;
-  }
-  .hero .container input {
-    position: relative !important;
-    transform: translate3d(0rem, 1rem, 0rem) !important;
-    width: 89% !important;
-  }
-  .hero .container .email {
-    transform: translate3d(0rem, 0rem, 0rem) !important;
-  }
-  .hero .container select {
-    width: 89% !important;
-    position: relative !important;
-    transform: translate3d(0rem, 0rem, 1rem) !important;
-  }
-  .hero .container .p-calendar {
-    transform: translate3d(0rem, -2rem, 1rem) !important;
-    width: 94% !important;
-  }
-  .hero .container #returntime {
-    transform: translate3d(0rem, -3rem, 1rem) !important;
-  }
-  .hero .container a {
-    justify-content: center;
-    display: flex;
-    transform: translateX(0) !important;
-    margin-top: -2rem !important;
-  }
-  .hero .container a button {
-    height: 3rem !important;
-  }
-  .hero .container line {
-    width: 0% !important;
-  }
-  .hero .about-us {
-    opacity: 1 !important;
-    transform: translate3d(-12rem, 25rem, 1rem) !important;
+    margin-left: 21rem !important;
+    margin-right: 21rem !important;
   }
   .hero .about-us img {
-    width: 39% !important;
-    margin-top: -17rem !important;
-    margin-left: 8rem !important;
+    width: 78% !important;
+    margin-top: -7rem !important;
+    margin-left: -1rem !important;
   }
   .hero .about-us h1 {
-    transform: translate3d(-52rem, -45rem, 1rem) !important;
-    width: 37% !important;
-    padding: 1rem;
-    font-size: 2rem !important;
+    width: 75% !important;
+    position: absolute !important;
+    transform: translate3d(-51rem, 0rem, 1rem) !important;
   }
   .hero .about-us p {
-    transform: translate3d(-52rem, -46rem, 1rem) !important;
-    width: 34% !important;
-    padding: 1rem !important;
+    margin-top: 15rem !important;
+    margin-left: 2rem !important;
+    width: 72% !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars {
+    display: grid !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car {
+    transform: translate3d(35rem, 0rem, 1rem) !important;
+    width: 16% !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .carousalLine2 {
+    margin-left: 4rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container {
+    margin-left: -2rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container .info {
+    margin-left: 1rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container .info svg {
+    transform: translate3d(-7.4rem, -1.7rem, 1rem) !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .classForInfo {
+    transform: translate3d(14rem, -8rem, 1rem) !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .classForInfo .carousal-info-conatiner {
+    transform: translateX(-4rem) !important;
   }
   .flex .mobile-adjust {
     position: relative !important;
@@ -308,40 +394,20 @@
     width: 26rem !important;
     transform: translate3d(-692px, 7rem, 10px) !important;
   }
-  .hero .working-steps {
-    margin-top: 40rem !important;
-    padding-bottom: 35rem !important;
-  }
-  .hero .working-steps .icon-container .icon {
-    box-shadow: var(--box-shadow2) !important;
-  }
-  .hero .working-steps .icon-container .icon h5 {
-    transform: translateX(0) !important;
-    opacity: 1 !important;
-  }
-  .hero .working-steps .icon-container .map {
-    transform: translateX(34rem) !important;
-    opacity: 1 !important;
-    margin-bottom: 25rem !important;
-  }
-  .hero .working-steps .icon-container .calander {
-    transform: translate3d(0px, 10rem, 1rem) !important;
-    margin-bottom: 20rem !important;
-  }
-  .hero .working-steps .icon-container .car-icon {
-    transform: translate3d(-545px, 20rem, 1rem) !important;
-    margin-bottom: 15rem !important;
+  .hero .working-steps .icon-container {
+    transform: translateX(-10rem) !important;
   }
   .hero .container {
     width: 70% !important;
     display: grid !important;
-    height: 41rem !important;
+    height: 45rem !important;
     transform: translate3d(3.5rem, 36rem, 1rem) !important;
     align-items: center !important;
   }
   .hero .container .mobile {
     display: block !important;
     text-align: center;
+    margin-top: -29rem !important;
   }
   .hero .container .Toastify {
     transform: translate3d(0rem, -5rem, 1rem) !important;
@@ -350,21 +416,29 @@
     position: relative !important;
     transform: translate3d(0rem, 1rem, 0rem) !important;
     width: 89% !important;
+    margin-top: 9rem !important;
   }
   .hero .container .email {
-    transform: translate3d(0rem, 0rem, 0rem) !important;
+    transform: translate3d(0rem, -13rem, 1rem) !important;
+    margin-top: 14rem !important;
   }
   .hero .container select {
     width: 89% !important;
     position: relative !important;
     transform: translate3d(0rem, 0rem, 1rem) !important;
   }
+  .hero .container .car-input {
+    transform: translateY(-13rem) !important;
+  }
+  .hero .container .location {
+    transform: translateY(-13rem) !important;
+  }
   .hero .container .p-calendar {
-    transform: translate3d(0rem, -2rem, 1rem) !important;
+    transform: translate3d(0rem, 3rem, 1rem) !important;
     width: 94% !important;
   }
   .hero .container #returntime {
-    transform: translate3d(0rem, -3rem, 1rem) !important;
+    transform: translate3d(0rem, 5rem, 1rem) !important;
   }
   .hero .container a {
     justify-content: center;
@@ -378,28 +452,8 @@
   .hero .container line {
     width: 0% !important;
   }
-  .hero .about-us {
-    opacity: 1 !important;
-    transform: translate3d(-12rem, 25rem, 1rem) !important;
-  }
-  .hero .about-us img {
-    width: 35% !important;
-    margin-top: -6rem !important;
-    margin-left: 8rem !important;
-  }
   .hero .about-us h1 {
-    transform: translate3d(-52rem, -45rem, 1rem) !important;
-    width: 31% !important;
-    padding: 1rem;
-  }
-  .hero .about-us p {
-    transform: translate3d(-52rem, -46rem, 1rem) !important;
-    width: 29% !important;
-    padding: 1rem !important;
-  }
-  .grouped-cars {
-    display: block !important;
-    transform: translateX(27rem) !important;
+    transform: translate3d(-51rem, -3rem, 1rem) !important;
   }
   .footer-car-container {
     top: 285rem !important;
@@ -451,13 +505,17 @@
   }
   .hero .hero-blob img {
     width: 26rem !important;
-    transform: translate3d(0px, -27rem, 10px) !important;
+    transform: translate3d(-41rem, 10rem, 10px) !important;
+  }
+  .hero .about-us {
+    margin-top: -1rem !important;
   }
   .hero .about-us img {
-    width: 33% !important;
+    width: 92% !important;
   }
   .hero .about-us h1 {
-    font-size: 3.1rem !important;
+    font-size: 2.5rem !important;
+    transform: translate3d(-51rem, -3rem, 1rem) !important;
   }
   .bg-teal-100 {
     transform: translateX(-6rem) !important;
@@ -515,35 +573,25 @@
   .hero .hero-btn .sell-btn {
     transform: translateX(92px) !important;
   }
-  .hero .hero-blob svg {
-    width: 152% !important;
-    transform: translate3d(3rem, 5rem, 10px) !important;
-  }
   .hero .hero-blob img {
-    width: 26rem !important;
-    transform: translate3d(0px, -27rem, 10px) !important;
+    transform: translate3d(-37rem, 11rem, 10px) !important;
   }
   .hero .working-steps h2 {
     font-size: 2.2rem !important;
+    transform: translate3d(0rem, -25rem, 1rem) !important;
   }
-  .hero .working-steps .icon-container .icon p {
-    font-size: 0.9rem !important;
+  .hero .working-steps .icon-container {
+    transform: translateX(-12rem) !important;
+    margin-top: -38rem !important;
   }
-  .hero .about-us img {
-    width: 32% !important;
-    margin-top: -22rem !important;
-  }
-  .hero .about-us h1 {
-    transform: translate3d(-51rem, -45rem, 1rem) !important;
-    width: 29% !important;
-    margin-left: 63rem !important;
-    font-size: 1.8rem !important;
+  .hero .about-us {
+    margin-top: 8rem !important;
   }
   .hero .about-us p {
-    transform: translate3d(-52rem, -46rem, 1rem) !important;
-    width: 26% !important;
-    padding: 1rem !important;
-    font-size: 0.9rem !important;
+    margin-top: 18rem !important;
+  }
+  .hero .container a .book-btn {
+    width: 14rem !important;
   }
   .flex .mobile-adjust {
     width: 24.5rem !important;
@@ -590,9 +638,6 @@
   }
 }
 @media screen and (max-width: 320px) {
-  .container {
-    transform: translate3d(2.5rem, 36rem, 1rem) !important;
-  }
   .hero .hero-text-container {
     transform: translate3d(1rem, 3rem, -1rem) !important;
   }
@@ -607,14 +652,17 @@
     transform: translate3d(3rem, 5rem, 10px) !important;
   }
   .hero .hero-blob img {
-    width: 26rem !important;
-    transform: translate3d(0px, -27rem, 10px) !important;
+    transform: translate3d(-32rem, 13rem, 10px) !important;
+    width: 23rem !important;
   }
   .hero .working-steps {
     transform: translate3d(0rem, 13rem, 1rem) !important;
   }
   .hero .working-steps h2 {
     font-size: 2rem !important;
+  }
+  .hero .working-steps .icon-container {
+    transform: translateX(-13.5rem) !important;
   }
   .hero .working-steps .icon-container .icon h5 {
     font-size: 1.5rem !important;
@@ -623,22 +671,15 @@
     font-size: 0.9rem !important;
     width: 302px !important;
   }
-  .hero .about-us img {
-    width: 27% !important;
-    margin-top: -22rem !important;
-    margin-left: 9rem !important;
+  .hero .about-us {
+    margin-top: 16rem !important;
+    margin-left: -1rem;
   }
-  .hero .about-us h1 {
-    transform: translate3d(-51rem, -45rem, 1rem) !important;
-    width: 25% !important;
-    margin-left: 63rem !important;
-    font-size: 1.5rem !important;
+  .hero .container {
+    transform: translate3d(2.5rem, 36rem, 1rem) !important;
   }
-  .hero .about-us p {
-    transform: translate3d(-52rem, -46rem, 1rem) !important;
-    width: 22% !important;
-    padding: 1rem !important;
-    font-size: 0.9rem !important;
+  .hero .container a .book-btn {
+    width: 12rem !important;
   }
   .nav-bar-under {
     width: 110% !important;
@@ -695,5 +736,35 @@
   }
   .flex .mobile-adjust {
     width: 21rem !important;
+  }
+  .carousal-title {
+    transform: translate3d(0rem, 64rem, 1rem) !important;
+  }
+  .parent-container {
+    padding-top: 10rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car {
+    transform: translate3d(35.7rem, 0rem, 1rem) !important;
+    width: 14% !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container {
+    margin-left: -3rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container .info svg {
+    transform: translate3d(-6.4rem, -2.2rem, 1rem) !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .info-container .info h6 {
+    font-size: 0.6rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .classForInfo {
+    transform: translate3d(14rem, -5rem, 1rem) !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .carousalLine2 {
+    margin-left: 3rem !important;
+    width: 10rem !important;
+    margin-top: -2rem !important;
+  }
+  .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .top-half {
+    height: 35% !important;
   }
 }/*# sourceMappingURL=navbarmedia.css.map */

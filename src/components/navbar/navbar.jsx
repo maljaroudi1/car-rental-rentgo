@@ -76,7 +76,7 @@ const Navbar = (props) => {
                 <div className="bg-gray-900 py-3 px-6 shadow-2 flex align-items-center justify-content-between relative lg:static border-bottom-1 border-gray-800 largel-navbar" style={{ minHeight: '84px', marginTop: '-9.5rem', marginLeft: '-1rem', marginRight: '-1rem' }}>
                     <img src={logo} alt="CarRental" height="40" className="mr-0 lg:mr-6 logo-white" />
 
-                    <a className="p-ripple cursor-pointer block lg:hidden text-gray-400 hover-menu"
+                    <a className="p-ripple cursor-pointer block lg:hidden text-gray-400 hover-menu tablet"
                         onClick={menuOn}
                     >
                         <i className={`pi pi-bars text-4xl  ${notHiddenBtn ? '' : 'hidden'}`} ></i>
@@ -85,7 +85,7 @@ const Navbar = (props) => {
                     </a>
                      {/* Make not hidden  2*/}
 
-                    <div className={`align-items-center flex-grow-1 justify-content-between lg:flex absolute lg:static w-full bg-gray-900 left-0 top-100 z-1 shadow-2 lg:shadow-none border-1 lg:border-none border-gray-800 ${notHidden ? 'hidden' : "" }`}>
+                    <div className={`align-items-center flex-grow-1 justify-content-between lg:flex absolute lg:static w-full bg-gray-900 left-0 top-100 z-1 shadow-2 lg:shadow-none border-1 lg:border-none border-gray-800 tabletqueri2 ${notHidden ? 'hidden' : "" }`}>
 
 
 

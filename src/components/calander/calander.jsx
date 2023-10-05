@@ -138,7 +138,7 @@ export default function Cale()  {
         <>          
                 <div className="container" id='target3'>
                     <ToastContainer/>
-                    <h1 className='mobile'>Book Your Ride Now!</h1>
+                    <h1 className='mobile container-display'>Book Your Ride Now!</h1>
 
                         <input type="text" placeholder='Your Full Name'
                         onChange={(e) => setFullName(e.target.value)}
