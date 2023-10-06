@@ -19,9 +19,30 @@ export default function Carousal() {
     <>
 
 
-      <h1 className="carousal-title">Explore Our Top Deals</h1>
+      <h1 className="carousal-title">Cars of the month</h1>
 
         <div className="parent-container">
+            <div className="cars-for-tablets hide-for-laptop">
+                        <Cars
+                            carImg={BMWM4Coupe}
+                            carName="BMW M4 Coupe"
+                            carPriceDay="$100/Day"
+                            carPriceMonth="$1900/Month"
+                            carSpedometer="11k"
+                            carTransmisson="Auto"
+                            carGas="Petrol"
+                            carousalLine={<line className='carousal-contain-line'></line>}
+                            handleEvent={handleLinkClick}
+                            buttonName="View our collection"
+                            carPassengers= '2'
+                            carLiterKM='10L/100KM'
+                            carDrivetrain='RWD'
+                            carousalLine2='carousalLine2'
+                            classForInfo2= 'classForInfo'
+                            carYear="2023"
+                        />
+            </div>
+
             <Carousel className='carousal-container'
                 infiniteLoop={true}
                 emulateTouch={true}

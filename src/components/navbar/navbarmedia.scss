@@ -41,13 +41,18 @@
 //     }
 
 // }
-
+@media screen and (max-width: 9999px){
+    .hide-for-laptop{
+        display: none !important;
+    }
+}
 
 
 @media screen and (max-width: 1800px){
     .media-car{
         margin-right: -37rem !important;
     }
+
 }
 
 
@@ -185,13 +190,17 @@
             }
         }
     }
-
+    .hide-for-laptop{
+        display: none !important;
+    }
 }
 
 
 
 //Medium Laptop
 @media screen and (max-width: 1280px){
+
+
     .portal-conatiner{
         .custom-btn {
             transform: translate3d(70rem, 5.5rem, 1rem) !important;
@@ -271,7 +280,7 @@
         a {
             transform: translate3d(0rem, 39rem, 10px) !important;
             .book-btn {
-                width: 17rem !important;
+                width: 14rem !important;
                 height: 3.5rem !important;
             }
         }
@@ -298,7 +307,6 @@
     }
 
 
-
     //for data table in location navbar
     .flex{
         .mobile-adjust{
@@ -312,6 +320,10 @@
 
     }
 
+    //For this breakpoint only
+    .hide-for-laptop{
+        display: grid !important;
+    }
     .hero{
         .container {
             transform: translate3d(19rem, 57rem, 1rem) !important;
@@ -338,48 +350,40 @@
         }
     }
     .parent-container{
+        padding-bottom: 76rem !important;
         .carousel-root {
-            .slider-wrapper{
-                .slider {
-                    .slide{
-                        .grouped-cars{
-                            .car{
-                                transform: translate3d(14rem, 0rem, 1rem) !important;
-                                width: 15% !important;
-                                .carousal-contain-line {
-                                    transform: translate3d(-8.5rem, -2rem, 1rem) !important;
-                                }
-                                .carousalLine2 {
-                                    margin-left: 3rem !important;
-                                }
-                                .info-container{
-                                    margin-left: -2rem !important;
-                                    .carousal-info-conatiner{
+            display: none !important;
 
-                                    }
+        }
+    }
+    .cars-for-tablets{
+        display: grid;
+        position: absolute;
+        width: 99rem;
+        transform: translate3d(36rem, 44rem, 10px);
+        .car{
+            .carousal-contain-line {
+                transform: translate3d(0rem, -2rem, 1rem) !important;
+            }
+            .carousalLine2 {
 
-                                    .info {
-
-
-                                        svg{
-                                            transform: translate3d(-7rem, -1.7rem, 1rem) !important;
-                                        }
-                                    }
-                                }
-                                classForInfo {
-                                    transform: translate3d(13rem, -8rem, 1rem) !important;
-                                }
-
-                            }
-                        }
+            }
+            .classForInfo {
+                transform: translate3d(10rem, -8rem, 1rem) !important;
+            }
+            .responsive-line{
+                margin-left: 5rem !important;
+            }
+            .info-container {
+                .info{
+                    svg {
+                        transform: translate3d(0rem, -1.7rem, 1rem) !important;
                     }
                 }
             }
         }
     }
-    .carousel .slide img {
-        margin-top: 1rem !important;
-    }
+
 }
 
 
