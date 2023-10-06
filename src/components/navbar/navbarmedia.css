@@ -105,8 +105,11 @@
   .hide-for-laptop {
     display: none !important;
   }
+  .nav-bar-under .filter {
+    transform: translate3d(67rem, 1rem, 1rem) !important;
+  }
   .nav-bar-under .sort {
-    transform: translate3d(33rem, -5rem, 1rem) !important;
+    transform: translate3d(56rem, 1rem, 1rem) !important;
   }
   .car-container {
     transform: translate3d(8.5rem, -19rem, 1rem) !important;
@@ -201,14 +204,11 @@
     width: 14rem !important;
     height: 3.5rem !important;
   }
-  .nav-bar-under {
-    height: 13rem !important;
-  }
-  .nav-bar-under .p-autocomplete {
-    transform: translate3d(33.5rem, 9rem, 1rem) !important;
+  .nav-bar-under .filter {
+    transform: translate3d(57rem, 1rem, 1rem) !important;
   }
   .nav-bar-under .sort {
-    transform: translate3d(-0.2rem, -1rem, 1rem) !important;
+    transform: translate3d(47rem, 1rem, 1rem) !important;
   }
   .car-container .sports-cars .car .responsive-line {
     margin-left: 3.5rem !important;
@@ -295,7 +295,13 @@
     width: 104% !important;
   }
   .nav-bar-under .p-autocomplete {
-    transform: translate3d(26rem, 9rem, 1rem) !important;
+    transform: translate3d(2rem, 1rem, 1rem) !important;
+  }
+  .nav-bar-under .filter {
+    transform: translate3d(41rem, 1rem, 1rem) !important;
+  }
+  .nav-bar-under .sort {
+    transform: translate3d(30rem, 1rem, 1rem) !important;
   }
   .car-container {
     transform: translate3d(5.9rem, -25rem, 1rem) !important;
@@ -455,14 +461,14 @@
   .hide-for-mobile {
     display: none !important;
   }
-  .nav-bar-under {
-    height: 13rem !important;
-  }
   .nav-bar-under .p-autocomplete {
-    transform: translate3d(17.5rem, 9rem, 1rem) !important;
+    transform: translate3d(1rem, 1rem, 1rem) !important;
+  }
+  .nav-bar-under .filter {
+    transform: translate3d(25rem, 1rem, 1rem) !important;
   }
   .nav-bar-under .sort {
-    transform: translate3d(-0.2rem, -1rem, 1rem) !important;
+    transform: translate3d(14.6rem, 1rem, 1rem) !important;
   }
   .car-container .sports-cars .car {
     width: 42% !important;
@@ -482,11 +488,32 @@
   .hero .about-us p {
     margin-top: 15rem !important;
   }
+  .nav-bar-under {
+    height: 10rem !important;
+  }
+  .nav-bar-under .filter {
+    transform: translate3d(1rem, 6rem, 1rem) !important;
+  }
+  .nav-bar-under .sort {
+    transform: translate3d(26rem, 6rem, 1rem) !important;
+  }
+  .nav-bar-under .p-autocomplete {
+    transform: translate3d(1rem, 2rem, 1rem) !important;
+  }
 }
 @media screen and (max-width: 500px) {
   .nav-bar-under {
     width: 106% !important;
     height: 14rem !important;
+  }
+  .nav-bar-under .filter {
+    transform: translate3d(1rem, 7rem, 1rem) !important;
+  }
+  .nav-bar-under .sort {
+    transform: translate3d(21rem, 2rem, 1rem) !important;
+  }
+  .nav-bar-under .p-autocomplete {
+    transform: translate3d(1rem, 2rem, 1rem) !important;
   }
   .hero .hero-text-container {
     transform: translate3d(2rem, 3rem, -1rem) !important;
@@ -598,9 +625,6 @@
   .filter {
     margin-top: -1rem !important;
   }
-  .sort {
-    margin-top: 1rem !important;
-  }
   .p-autocomplete {
     transform: translate3d(8rem, 10rem, 1rem) !important;
   }
@@ -641,9 +665,6 @@
   }
   .bg-teal-100 {
     transform: translateX(-6rem) !important;
-  }
-  .p-autocomplete {
-    transform: translate3d(7rem, 7rem, 1rem) !important;
   }
   .car-name {
     transform: translateX(13.5rem) !important;
@@ -687,6 +708,29 @@
     width: 8rem !important;
     transform: translateX(-16.5rem) !important;
   }
+  .nav-bar-under .sort {
+    transform: translate3d(1rem, 10rem, 1rem) !important;
+  }
+  .p-3 .surface-card .carpayments {
+    transform: translate3d(-7rem, 8.8rem, 1rem) !important;
+  }
+  .p-3 .surface-card .line {
+    display: none !important;
+  }
+  .p-3 .surface-card .line2 {
+    display: none !important;
+  }
+  .p-3 .surface-card .bg-teal-100 {
+    transform: translateY(-2rem) !important;
+  }
+  .p-3 .surface-card .car-name {
+    transform: translateX(12.5rem) !important;
+    margin-top: 7rem !important;
+    width: 100% !important;
+  }
+  .p-3 .surface-card .toggle-btn {
+    transform: translate3d(-8rem, -2rem, 1rem) !important;
+  }
 }
 @media screen and (max-width: 375px) {
   .hero .hero-text-container {
@@ -725,9 +769,6 @@
   .bg-teal-100 {
     transform: translateX(-4.5rem) !important;
   }
-  .p-autocomplete {
-    transform: translate3d(7rem, 7rem, 1rem) !important;
-  }
   .car-name span {
     transform: translate3d(-3rem, -1.5rem, 1rem);
     text-transform: uppercase;
@@ -757,6 +798,12 @@
   }
   .book-btn-mobile {
     min-width: 15rem !important;
+  }
+  .nav-bar-under .p-autocomplete {
+    transform: translate3d(5rem, 9rem, 1rem) !important;
+  }
+  .p-3 .surface-card .car-name {
+    transform: translateX(11rem) !important;
   }
 }
 @media screen and (max-width: 320px) {
@@ -803,43 +850,8 @@
   .hero .container a .book-btn {
     width: 12rem !important;
   }
-  .nav-bar-under {
-    width: 110% !important;
-  }
-  .bg-teal-100 {
-    transform: translateX(0.5rem) !important;
-    margin-top: -4rem !important;
-  }
-  .p-autocomplete {
-    transform: translate3d(4rem, 7rem, 1rem) !important;
-  }
-  .car-name {
-    transform: translateX(9.5rem) !important;
-    margin-top: 6rem !important;
-    width: 100% !important;
-  }
-  .car-name span {
-    transform: translate3d(-3rem, -1.5rem, 1rem);
-    text-transform: uppercase;
-  }
-  .car-name p {
-    transform: translate3d(-3rem, -0.5rem, 1rem) !important;
-  }
   .more-info {
     transform: translate3d(-3rem, 0.5rem, 1rem) !important;
-  }
-  .toggle-btn {
-    transform: translateX(-7.5rem) !important;
-    margin-top: -3.5rem !important;
-  }
-  .carpayments {
-    transform: translate3d(-3rem, 8rem, 1rem) !important;
-  }
-  .carpayments .month {
-    transform: translate3d(4.5rem, -91px, 1rem) !important;
-  }
-  .carpayments .day {
-    transform: translate3d(1rem, -91px, 1rem) !important;
   }
   .icon-info {
     transform: translate3d(-5.5rem, 14.5rem, 1rem) !important;
@@ -888,5 +900,27 @@
   }
   .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars .car .top-half {
     height: 35% !important;
+  }
+  .nav-bar-under .p-autocomplete {
+    transform: translate3d(3.7rem, 9rem, 1rem) !important;
+  }
+  .p-3 .open-info {
+    width: 110% !important;
+    margin-left: -0.5rem !important;
+  }
+  .p-3 .surface-card .bg-teal-100 {
+    transform: translateY(-2rem) !important;
+  }
+  .p-3 .surface-card .car-name {
+    transform: translateX(9rem) !important;
+  }
+  .p-3 .surface-card .carpayments {
+    transform: translate3d(-5rem, 8.8rem, 1rem) !important;
+  }
+  .p-3 .surface-card .icon-info {
+    transform: translate3d(-5.5rem, 14.5rem, 1rem) !important;
+  }
+  .p-3 .surface-card .icon-info2 {
+    transform: translate3d(-4.5rem, 14.5rem, 1rem) !important;
   }
 }/*# sourceMappingURL=navbarmedia.css.map */

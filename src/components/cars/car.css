@@ -30,7 +30,7 @@
   height: 0.2%;
   position: absolute;
   transform: rotate(90deg);
-  margin-left: 6.2rem;
+  margin-left: 5rem;
   margin-top: -4rem;
 }
 .car .top-half {
@@ -100,6 +100,7 @@
 }
 .car .info-container {
   display: grid;
+  margin-left: -1rem;
 }
 .car .info-container .info .custom-svg {
   transform: translate3d(0rem, -1.7rem, 1rem) !important;

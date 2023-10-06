@@ -5,11 +5,13 @@ import Cookies from 'js-cookie'
 
 //logo
 
+import { MultiSelect } from 'primereact/multiselect';
+
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPerson, faGaugeHigh, faUpDown} from '@fortawesome/free-solid-svg-icons'
 import { motion} from 'framer-motion'
-import { useState, useRef } from 'react';
+import { useState } from 'react';
 
 //Prime-react
 
@@ -27,7 +29,6 @@ import "primereact/resources/primereact.min.css";
 import {  PrimeReactContext } from 'primereact/api';
 
 
-import { toast } from 'react-toastify';
 
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -35,12 +36,6 @@ import carData from './carData'
 
 // import '../navbar/navbar.css'
 
-import { SelectButton } from 'primereact/selectbutton';
-
-import axios from 'axios'
-
-
-import { RadioButton } from 'primereact/radiobutton';
 
 
 import {faGauge, faGear, faFillDrip, faCar} from '@fortawesome/free-solid-svg-icons'
@@ -57,34 +52,42 @@ export default function  carContainer()   {
   // Map through the filteredCars array to render each car
                 const [search, setSearch] = useState("");
                 const  [car, setCar] = useState([]);
+
+                const [sortCars, setSortCars] = useState(null);
+
                 const sortByCarType = [
-                    { carType: "All", value: null },
-                    { carType: 'Sport', value: ' Sport'},
-                    { carType: 'Sedan', value: ' Sedan' },
-                    { carType: 'SUV', value: ' SUV' }
+                    {
+                      label: 'Filter By Type',
+                      items: [
+                        { label: 'Sport', value: ' Sport' },
+                        { label: 'Sedan', value: ' Sedan' },
+                        { label: 'SUV', value: ' SUV' },
+                      ],
+                    }
+
+
                 ];
 
-                 const [sortCars, setSortCars] = useState(sortByCarType[0].value);
 
-                 const [sortByDecAcen, setSortByDecAcen] = useState('Ascending')
-                 const sortByCarAcen2 = [
-                    {
-                      label: 'Ascending',
-                      sortFunction: (a, b) => a.localeCompare(b), // A-Z sorting
-                    },
-                    {
-                      label: 'Descending',
-                      sortFunction: (a, b) => b.localeCompare(a), // Z-A sorting
-                    },
-                  ];
 
-                  const toggleSortOrder = () => {
-                    if (sortByDecAcen === 'Ascending') {
-                      setSortByDecAcen('Descending');
-                    } else {
-                      setSortByDecAcen('Ascending');
-                    }
-                  };
+                const [sortByDecAcen, setSortByDecAcen] = useState(['Ascending']);
+
+
+                const sortByCarAcen2 = [
+                  {
+                    label: 'Ascending',
+                    value: 'Ascending'
+                    // A-Z sorting
+
+                  },
+                  {
+                    // Z-A sorting
+                    label: 'Descending',
+                    value: 'Descending'
+                  },
+
+                ];
+
 
 
                  const [openCarID, setOpenCarID] = useState(null);
@@ -104,7 +107,6 @@ export default function  carContainer()   {
                     window.location.href = '/booking';
                   }
 
-///
 
 
     return(
@@ -115,6 +117,35 @@ export default function  carContainer()   {
 
 
                     <div className="nav-bar-under " style={{paddingBottom: '-5px', paddingTop: '-5px'}}>
+                            <MultiSelect
+                            value={sortCars}
+                            onChange={(e) => setSortCars(e.value)}
+                            options={sortByCarType}
+                            optionLabel="label"
+                            maxSelectedLabels={3}
+                            selectionLimit={3}
+                            placeholder='Filter cars'
+                            display="chip"
+                            optionGroupLabel="label"
+                            optionGroupChildren="items"
+                            style={{ position: 'absolute', zIndex: '22222', transform: 'translate3d(97rem, 1rem, 1rem)' }}
+                            className='filter'
+                            />
+
+
+
+                             <MultiSelect
+                            value={sortByDecAcen}
+                            onChange={(e) => setSortByDecAcen(e.value)}
+                            options={sortByCarAcen2}
+                            optionLabel="label"
+                            maxSelectedLabels={1}
+                            selectionLimit={1}
+                            placeholder='Sort cars'
+                            showSelectAll={false}
+                            style={{ position: 'absolute', zIndex: '22222', transform: 'translate3d(87rem, 1rem, 1rem)' }}
+                            className='sort'
+                            />
 
 
 
@@ -127,22 +158,7 @@ export default function  carContainer()   {
                             style={{transform: "translate3d(16rem, 1rem, 1rem)"}}
                             />
 
-                            <SelectButton
-                            value={sortCars}
-                            onChange={(e) => setSortCars(e.value)}
-                            optionLabel="carType"
-                            options={sortByCarType}
-                            className="select-btn filter"
-                            style={{transform: "translateY(-2rem)"}}
-                            />
 
-                            <SelectButton
-                            value={sortByDecAcen}
-                            onChange={(e) => setSortByDecAcen(e.value)}
-                            options={sortByCarAcen2.map((option) => option.label)}
-                            className="select-btn sort"
-                            style={{ transform: "translate3d(37rem,-5rem,1rem)" }}
-                            />
 
                     </div>
 
@@ -158,13 +174,13 @@ export default function  carContainer()   {
                                 : car.carType.toLocaleLowerCase().includes(search)
 
                             }).filter((car) => {
-                                return (sortCars === null || car.carType === sortCars)
+                                return (sortCars === null || sortCars.includes(car.carType));
                             }).sort((a, b) => {
-                                if (sortByDecAcen === 'Ascending') {
-                                  return a.carName.localeCompare(b.carName);
-                                } else {
-                                  return b.carName.localeCompare(a.carName);
-                                }
+                                if (sortByDecAcen[0] === 'Ascending') {
+                                    return a.carName.localeCompare(b.carName);
+                                  } else if (sortByDecAcen[0] === 'Descending') {
+                                    return b.carName.localeCompare(a.carName);
+                                  }
 
 
                               }).map((car) => (
@@ -265,16 +281,18 @@ export default function  carContainer()   {
                                 : car.carName.toLocaleLowerCase().includes(search)
                                 ? car
                                 : car.carType.toLocaleLowerCase().includes(search)
+                            // }).filter((car) => {
+                            //     return (sortCars === null || car.carType === sortCars)
                             }).filter((car) => {
-                                return (sortCars === null || car.carType === sortCars)
+
+                                return (sortCars === null || sortCars.includes(car.carType)) ;
+
                             }).sort((a, b) => {
-                                if (sortByDecAcen === 'Ascending') {
-                                  return a.carName.localeCompare(b.carName);
-                                } else {
-                                  return b.carName.localeCompare(a.carName);
-                                }
-
-
+                                if (sortByDecAcen[0] === 'Ascending') {
+                                    return a.carName.localeCompare(b.carName);
+                                  } else if (sortByDecAcen[0] === 'Descending') {
+                                    return b.carName.localeCompare(a.carName);
+                                  }
                               }).map((car, index) => (
                                    <Cars
                                     key={index}
@@ -308,107 +326,6 @@ export default function  carContainer()   {
 
                     </div>
 
-                    {/* <div className="form-container">
-
-                        <div className={`create-car-form ${toggleForm}`} ref={carFormRef} id='carform'>
-
-                                <div className="img-container">
-                                    <h1>Ready to Book? Just fill out this form!</h1>
-                                    <img src={formStyling} alt=""  className='img-styling imgOne'/>
-                                    <img src={formStyling2} alt="" className='img-styling imgTwo'/>
-                                    <img src={carIMG} alt="" className='img1'/>
-                                    <img src={carIMG2} alt="" className='img2'/>
-                                </div>
-
-
-
-
-                            <ToastContainer />
-                            <div className="center-items">
-                                <h1>Book Your Dream Car Now!</h1>
-                                <input type="text" placeholder='Type Your Full Name'
-                                onChange={(e) => setNewCarFullName(e.target.value)}
-                                required
-                                />
-                                <input type="email" name="" id="" placeholder='Type Your Email'
-                                    onChange={(e) => setNewCarEmail(e.target.value)}
-                                    required
-                                />
-                                <input type="phone" name="" id="" placeholder='Type Your Phone'
-                                    onChange={(e) => setNewCarPhone(e.target.value)}
-                                    required
-                                />
-                                <select name="" id=""
-                                    required
-                                    onChange={(e) =>  {
-                                        const selectedCarID = e.target.value;
-                                        const selectedCar = carData.find((car) => car.carID === selectedCarID);
-                                        setTheCarID(selectedCar.carID);
-                                        setCarName(selectedCar.carName);
-                                        setCarYear(selectedCar.carYear);
-                                        setCarType(selectedCar.carType);
-                                        setAvailableCars(selectedCar.Available)
-                                    }}
-
-                                >
-                                    <option value="" disabled selected>Select a car</option>
-                                    {carData.map((car) => (
-                                        <option key={car.carID} value={car.carID}>
-                                            {car.carName}
-                                            {car.carYear}
-                                            {car.carType}
-                                        </option>
-                                    ))}
-
-                                 </select>
-
-                                <select name="" id=""
-                                    onChange={(e) => setLocationCar(e.target.value)}
-                                    required
-                                >
-                                        <option value="" disabled selected>Select pick up location</option>
-                                        <option value="3500 Mavis Rd">3500 Mavis Rd, Mississauga, ON L5C 1T8</option>
-                                        <option value="55 King St W">55 King St W, Toronto, ON M5H 3C2</option>
-                                        <option value="215 Evans Ave">215 Evans Ave, Etobicoke, ON M8Z 1J5</option>
-                                </select>
-
-
-                                <label htmlFor="date" className='label label1'>Pick Up Date</label>
-                                <input type="date" name="" id=""
-                                    placeholder='Pick Up Date'
-                                    onChange={(e) => setNewCarPickUp(e.target.value)}
-                                    required
-
-                                />
-                                <label htmlFor="date" className='label label2'>Return Date</label>
-                                <input type="date" name="" id=""
-                                    placeholder='Return Date'
-                                    onChange={(e) => setNewCarReturn(e.target.value)}
-                                    required
-                                />
-
-
-                                <motion.button onClick={onSubmitCreateCar} className='submit'
-                                type="submit"
-                                whileTap={{ scale: 0.9 }}
-                                whileHover={{ backgroundColor: "#FD8800", color:"white" }}
-                                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                                >Submit</motion.button>
-
-                                 <motion.button onClick={closeForm}
-                                className='submit close-btn'
-                                whileTap={{ scale: 0.9 }}
-                                whileHover={{ backgroundColor: "red", color:"white" }}
-                                transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                                ><FontAwesomeIcon icon={faCircleArrowLeft} />Go back</motion.button>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className={`background-overlay ${toggleForm}`} ref={backgroundRef}>
-
-                    </div> */}
 
         </div>
     );

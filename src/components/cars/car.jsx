@@ -84,7 +84,7 @@ const Cars = (props) => {
                         
                     </div>
                     <div className={`line ${carousalLine2} responsive-line`}></div>
-                    <div className={`info-container ${classForInfo2} ${classForCarContainer} `} style={{transform: ' translate3d(12rem, -8rem, 1rem)'}}>
+                    <div className={`info-container ${classForInfo2} ${classForCarContainer} `} style={{transform: ' translate3d(11rem, -8rem, 1rem)'}}>
                                 <div className="info carousal-info-conatiner">
                                     <FontAwesomeIcon icon={faGauge} className={`${classForSvg}`} />
                                     <h6><span>Passengers:</span>&nbsp; {carPassengers}</h6>
