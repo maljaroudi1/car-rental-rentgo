@@ -215,17 +215,17 @@
       .about-us{
         h1{
             font-size: 2.5rem !important;
-            margin-left: 60rem !important;
+            margin-left: 57rem !important;
             width: 44% !important;
         }
         p{
-            margin-left: 40rem !important;
+            margin-left: 37rem !important;
         }
       }
       .container{
-        transform: translate3d(28rem, 57rem, 1rem) !important;
+        transform: translate3d(16rem, 57rem, 1rem) !important;
         height: 44.5rem !important;
-        width: 30% !important;
+        width: 55% !important;
         .container-display{
             display: block !important;
             font-size: 2.5rem !important;
@@ -246,11 +246,11 @@
         }
         .car-input {
             transform: translate3d(-0.5rem, 19rem, 1rem) !important;
-            z-index: 1;
+            z-index: 3;
         }
         .location {
             transform: translate3d(-0.5rem, 24rem, 1rem) !important;
-            z-index: 1;
+            z-index: 3;
         }
         span{
             position: absolute !important;
@@ -258,9 +258,12 @@
             width: 76% !important;
             margin-top: 1rem;
         }
-
+        .p-calendar{
+            z-index: 2;
+        }
         #returntime{
             margin-top: 6rem !important;
+            z-index: 1;
         }
         line {
            display: none !important;
@@ -293,6 +296,7 @@
             }
         }
     }
+
 
 
     //for data table in location navbar
@@ -379,8 +383,9 @@
 }
 
 
-// Google mobile
+//Google Browser
 @media screen and (max-width: 769px){
+
     .portal-conatiner{
      display: none !important ;
     }
@@ -423,19 +428,22 @@
 
 
     .hero{
+        .hero .hero-text-container {
+            transform: translate3d(1rem, 26rem, -1rem) !important;
+        }
         .container {
-            transform: translate3d(11rem, 57rem, 1rem) !important;
-            width: 50% !important;
+            transform: translate3d(3rem, 57rem, 1rem) !important;
+            width: 77% !important;
         }
         .hero-blob{
             transform: translate3d(1rem, 25rem, 10px) !important;
             svg{
-                width: 87% !important;
-                transform: translate3d(25rem, -1rem, 10px) !important;
+                width: 98% !important;
+                transform: translate3d(11rem, 8rem, 10px) !important;
             }
             img{
-                width: 41rem !important;
-                transform: translate3d(-36rem, 2rem, 10px) !important;
+                width: 40rem !important;
+                transform: translate3d(-32rem, 2rem, 10px) !important;
             }
         }
         .working-steps{
@@ -464,6 +472,9 @@
                 width: 72% !important;
             }
         }
+       .hero-btn {
+            transform: translate3d(0rem, 27rem, 1rem) !important;
+        }
     }
     .parent-container{
         .carousel-root {
@@ -472,9 +483,11 @@
                     .slide{
                         .grouped-cars{
                             display: grid !important;
+
                             .car {
                                 transform: translate3d(35rem, 0rem, 1rem) !important;
                                 width: 16% !important;
+
                                 .carousalLine2 {
                                     margin-left: 4rem !important;
                                 }
@@ -554,7 +567,32 @@
 }
 
 
-// //Firefox mobile
+@media screen and (max-width: 600px) {
+    .hero {
+        .working-steps {
+            .icon-container {
+                margin-left: -7rem !important;
+            }
+        }
+        .about-us{
+            h1{
+                transform: translate3d(-47rem, -4rem, 1rem) !important;
+            }
+            img {
+                width: 95% !important;
+                margin-left: 1rem !important;
+            }
+            p{
+                margin-top: 15rem !important;
+                margin-left: 6rem !important;
+            }
+        }
+    }
+
+}
+
+
+//Firefox Browser
 @media screen and (max-width: 500px) {
     .nav-bar-under {
         width: 106% !important;
@@ -587,15 +625,15 @@
                 transform: translate3d(3rem, -1rem, 10px) !important;
             }
             img{
-                width: 26rem !important;
-                transform: translate3d(-692px, 7rem, 10px) !important;
+                width: 31rem !important;
+                transform: translate3d(0rem, -36rem, 10px) !important;
             }
 
         }
         .working-steps {
 
             .icon-container{
-                transform: translateX(-10rem) !important;
+                transform: translateX(-1rem) !important;
             }
         }
         .container {
@@ -629,16 +667,20 @@
             }
             .car-input{
                 transform: translateY(-13rem) !important;
+                z-index: 3 !important;
             }
             .location{
                 transform: translateY(-13rem) !important;
+                z-index: 3 !important;
             }
             .p-calendar{
                 transform: translate3d(0rem, 3rem, 1rem) !important;
                 width: 94% !important;
+                z-index: 2 !important;
             }
             #returntime{
                 transform: translate3d(0rem, 5rem, 1rem) !important;
+                z-index: 1 !important;
             }
             a{
                 justify-content: center;
@@ -653,11 +695,7 @@
                 width: 0% !important;
             }
         }
-        .about-us{
-            h1{
-                transform: translate3d(-51rem, -3rem, 1rem) !important;
-            }
-        }
+
 
     }
 

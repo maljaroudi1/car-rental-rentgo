@@ -37,12 +37,16 @@ export default function Carousal() {
             
             >
 
+
                         <div className="grouped-cars ">
-                            <Cars 
+
+
+
+                            <Cars
                             carImg={BMWM4Coupe}
-                            carName="BMW M4 Coupe" 
-                            carPriceDay="$100/Day" 
-                            carPriceMonth="$1900/Month" 
+                            carName="BMW M4 Coupe"
+                            carPriceDay="$100/Day"
+                            carPriceMonth="$1900/Month"
                             carSpedometer="11k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -57,12 +61,12 @@ export default function Carousal() {
                             carYear="2023"
                             />
 
-                            <Cars 
-                        
-                            carImg={BmwZRoadster} 
-                            carName="BMW Z-Roadster" 
-                            carPriceDay="$120/Day" 
-                            carPriceMonth="$2100/Month" 
+                            <Cars
+
+                            carImg={BmwZRoadster}
+                            carName="BMW Z-Roadster"
+                            carPriceDay="$120/Day"
+                            carPriceMonth="$2100/Month"
                             carSpedometer="12k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -78,12 +82,12 @@ export default function Carousal() {
                             />
 
 
-                            <Cars 
-                            
-                            carImg={BMW8Series} 
-                            carName="BMW 8 Series" 
-                            carPriceDay="$150/Day" 
-                            carPriceMonth="$2500/Month" 
+                            <Cars
+
+                            carImg={BMW8Series}
+                            carName="BMW 8 Series"
+                            carPriceDay="$150/Day"
+                            carPriceMonth="$2500/Month"
                             carSpedometer="15k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -101,11 +105,11 @@ export default function Carousal() {
                         </div>
 
                         <div className="grouped-cars ">
-                            <Cars 
+                            <Cars
                             carImg={BMWM4Coupe}
-                            carName="BMW M4 Coupe" 
-                            carPriceDay="$100/Day" 
-                            carPriceMonth="$1900/Month" 
+                            carName="BMW M4 Coupe"
+                            carPriceDay="$100/Day"
+                            carPriceMonth="$1900/Month"
                             carSpedometer="11k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -120,12 +124,12 @@ export default function Carousal() {
                             carYear="2023"
                             />
 
-                            <Cars 
+                            <Cars
                         
-                            carImg={BmwZRoadster} 
-                            carName="BMW Z-Roadster" 
-                            carPriceDay="$120/Day" 
-                            carPriceMonth="$2100/Month" 
+                            carImg={BmwZRoadster}
+                            carName="BMW Z-Roadster"
+                            carPriceDay="$120/Day"
+                            carPriceMonth="$2100/Month"
                             carSpedometer="12k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -141,12 +145,12 @@ export default function Carousal() {
                             />
 
 
-                            <Cars 
-                            
-                            carImg={BMW8Series} 
-                            carName="BMW 8 Series" 
-                            carPriceDay="$150/Day" 
-                            carPriceMonth="$2500/Month" 
+                            <Cars
+
+                            carImg={BMW8Series}
+                            carName="BMW 8 Series"
+                            carPriceDay="$150/Day"
+                            carPriceMonth="$2500/Month"
                             carSpedometer="15k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -164,11 +168,11 @@ export default function Carousal() {
                         </div>
                     
                         <div className="grouped-cars ">
-                            <Cars 
+                            <Cars
                             carImg={BMWM4Coupe}
-                            carName="BMW M4 Coupe" 
-                            carPriceDay="$100/Day" 
-                            carPriceMonth="$1900/Month" 
+                            carName="BMW M4 Coupe"
+                            carPriceDay="$100/Day"
+                            carPriceMonth="$1900/Month"
                             carSpedometer="11k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -183,12 +187,12 @@ export default function Carousal() {
                             carYear="2023"
                             />
 
-                            <Cars 
-                        
-                            carImg={BmwZRoadster} 
-                            carName="BMW Z-Roadster" 
-                            carPriceDay="$120/Day" 
-                            carPriceMonth="$2100/Month" 
+                            <Cars
+
+                            carImg={BmwZRoadster}
+                            carName="BMW Z-Roadster"
+                            carPriceDay="$120/Day"
+                            carPriceMonth="$2100/Month"
                             carSpedometer="12k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -204,12 +208,12 @@ export default function Carousal() {
                             />
 
 
-                            <Cars 
-                            
-                            carImg={BMW8Series} 
-                            carName="BMW 8 Series" 
-                            carPriceDay="$150/Day" 
-                            carPriceMonth="$2500/Month" 
+                            <Cars
+
+                            carImg={BMW8Series}
+                            carName="BMW 8 Series"
+                            carPriceDay="$150/Day"
+                            carPriceMonth="$2500/Month"
                             carSpedometer="15k"
                             carTransmisson="Auto"
                             carGas="Petrol"
@@ -227,9 +231,9 @@ export default function Carousal() {
                         </div>
 
                     
-            </Carousel>     
+            </Carousel>
         </div>
-    
+
            
         </>
     );

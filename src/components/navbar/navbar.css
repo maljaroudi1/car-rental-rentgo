@@ -118,16 +118,16 @@
   }
   .hero .about-us h1 {
     font-size: 2.5rem !important;
-    margin-left: 60rem !important;
+    margin-left: 57rem !important;
     width: 44% !important;
   }
   .hero .about-us p {
-    margin-left: 40rem !important;
+    margin-left: 37rem !important;
   }
   .hero .container {
-    transform: translate3d(28rem, 57rem, 1rem) !important;
+    transform: translate3d(16rem, 57rem, 1rem) !important;
     height: 44.5rem !important;
-    width: 30% !important;
+    width: 55% !important;
   }
   .hero .container .container-display {
     display: block !important;
@@ -149,11 +149,11 @@
   }
   .hero .container .car-input {
     transform: translate3d(-0.5rem, 19rem, 1rem) !important;
-    z-index: 1;
+    z-index: 3;
   }
   .hero .container .location {
     transform: translate3d(-0.5rem, 24rem, 1rem) !important;
-    z-index: 1;
+    z-index: 3;
   }
   .hero .container span {
     position: absolute !important;
@@ -161,8 +161,12 @@
     width: 76% !important;
     margin-top: 1rem;
   }
+  .hero .container .p-calendar {
+    z-index: 2;
+  }
   .hero .container #returntime {
     margin-top: 6rem !important;
+    z-index: 1;
   }
   .hero .container line {
     display: none !important;
@@ -266,20 +270,23 @@
   .map-container {
     width: 100% !important;
   }
+  .hero .hero .hero-text-container {
+    transform: translate3d(1rem, 26rem, -1rem) !important;
+  }
   .hero .container {
-    transform: translate3d(11rem, 57rem, 1rem) !important;
-    width: 50% !important;
+    transform: translate3d(3rem, 57rem, 1rem) !important;
+    width: 77% !important;
   }
   .hero .hero-blob {
     transform: translate3d(1rem, 25rem, 10px) !important;
   }
   .hero .hero-blob svg {
-    width: 87% !important;
-    transform: translate3d(25rem, -1rem, 10px) !important;
+    width: 98% !important;
+    transform: translate3d(11rem, 8rem, 10px) !important;
   }
   .hero .hero-blob img {
-    width: 41rem !important;
-    transform: translate3d(-36rem, 2rem, 10px) !important;
+    width: 40rem !important;
+    transform: translate3d(-32rem, 2rem, 10px) !important;
   }
   .hero .working-steps {
     margin-top: 86rem !important;
@@ -302,6 +309,9 @@
     margin-top: 15rem !important;
     margin-left: 2rem !important;
     width: 72% !important;
+  }
+  .hero .hero-btn {
+    transform: translate3d(0rem, 27rem, 1rem) !important;
   }
   .parent-container .carousel-root .slider-wrapper .slider .slide .grouped-cars {
     display: grid !important;
@@ -362,6 +372,22 @@
     display: none !important;
   }
 }
+@media screen and (max-width: 600px) {
+  .hero .working-steps .icon-container {
+    margin-left: -7rem !important;
+  }
+  .hero .about-us h1 {
+    transform: translate3d(-47rem, -4rem, 1rem) !important;
+  }
+  .hero .about-us img {
+    width: 95% !important;
+    margin-left: 1rem !important;
+  }
+  .hero .about-us p {
+    margin-top: 15rem !important;
+    margin-left: 6rem !important;
+  }
+}
 @media screen and (max-width: 500px) {
   .nav-bar-under {
     width: 106% !important;
@@ -391,11 +417,11 @@
     transform: translate3d(3rem, -1rem, 10px) !important;
   }
   .hero .hero-blob img {
-    width: 26rem !important;
-    transform: translate3d(-692px, 7rem, 10px) !important;
+    width: 31rem !important;
+    transform: translate3d(0rem, -36rem, 10px) !important;
   }
   .hero .working-steps .icon-container {
-    transform: translateX(-10rem) !important;
+    transform: translateX(-1rem) !important;
   }
   .hero .container {
     width: 70% !important;
@@ -429,16 +455,20 @@
   }
   .hero .container .car-input {
     transform: translateY(-13rem) !important;
+    z-index: 3 !important;
   }
   .hero .container .location {
     transform: translateY(-13rem) !important;
+    z-index: 3 !important;
   }
   .hero .container .p-calendar {
     transform: translate3d(0rem, 3rem, 1rem) !important;
     width: 94% !important;
+    z-index: 2 !important;
   }
   .hero .container #returntime {
     transform: translate3d(0rem, 5rem, 1rem) !important;
+    z-index: 1 !important;
   }
   .hero .container a {
     justify-content: center;
@@ -451,9 +481,6 @@
   }
   .hero .container line {
     width: 0% !important;
-  }
-  .hero .about-us h1 {
-    transform: translate3d(-51rem, -3rem, 1rem) !important;
   }
   .footer-car-container {
     top: 285rem !important;
