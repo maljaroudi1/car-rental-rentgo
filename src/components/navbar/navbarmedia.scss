@@ -62,6 +62,9 @@
 
 //Large Laptop
 @media screen and (max-width: 1440px){
+
+
+
     .media-car{
         margin-right: -25rem !important;
     }
@@ -86,11 +89,15 @@
     .largel-navbar{
         margin-right: -14rem !important;
     }
+
+    //signinsingup
     .portal-conatiner{
         .custom-btn {
             transform: translate3d(75rem, 5.5rem, 1rem) !important;
         }
     }
+
+    //hero section
     .hero{
         .hero-blob{
             transform: translate3d(13rem, 10px, 10px) !important;
@@ -125,6 +132,8 @@
             }
         }
     }
+
+    //hero container
     .container{
         height: 9.5rem !important;
         width: 81% !important;
@@ -193,6 +202,29 @@
     .hide-for-laptop{
         display: none !important;
     }
+
+    //Car section
+    .nav-bar-under{
+        .sort{
+            transform: translate3d(33rem, -5rem, 1rem) !important;
+        }
+    }
+    .car-container{
+        transform: translate3d(8.5rem, -19rem, 1rem) !important;
+        .sports-cars{
+            .car{
+                width: 30% !important;
+                .responsive-line{
+                    margin-left: 4.5rem !important;
+                }
+                .info-container{
+                    margin-left: -1.5rem !important;
+                }
+            }
+        }
+    }
+
+
 }
 
 
@@ -286,6 +318,39 @@
         }
       }
     }
+    //car section
+    .nav-bar-under{
+        height: 13rem !important;
+        .p-autocomplete{
+            transform: translate3d(33.5rem, 9rem, 1rem) !important;
+        }
+        .sort{
+            transform: translate3d(-0.2rem, -1rem, 1rem) !important;
+        }
+    }
+    .car-container{
+        .sports-cars{
+            .car{
+                .responsive-line{
+                    margin-left: 3.5rem !important;
+                }
+                .info-container{
+                    margin-left: -1.6rem !important;
+                    .info{
+                        svg{
+                            transform: translate3d(0.4rem, -1.7rem, 1rem) !important;
+                        }
+                        h6{
+                            font-size: 0.75rem !important;
+                        }
+                    }
+                }
+                .classForInfo2{
+                    transform: translate3d(10rem, -7.5rem, 1rem) !important;
+                }
+            }
+        }
+    }
 }
 
 //Small Laptop
@@ -323,6 +388,9 @@
     //For this breakpoint only
     .hide-for-laptop{
         display: grid !important;
+    }
+    .hide-for-tablet{
+        display: none !important;
     }
     .hero{
         .container {
@@ -384,9 +452,57 @@
         }
     }
 
+
+
+      //Car section
+    .nav-bar-under{
+        width: 104% !important;
+
+        .p-autocomplete{
+            transform: translate3d(26rem, 9rem, 1rem) !important;
+
+        }
+
+    }
+    .car-container{
+        transform: translate3d(5.9rem, -25rem, 1rem) !important;
+        .sports-cars{
+            .car{
+                width: 42% !important;
+                .classForInfo2 {
+                    transform: translate3d(11rem, -7.5rem, 1rem) !important;
+                }
+                .responsive-line {
+                    margin-left: 4rem !important;
+                }
+            }
+        }
+    }
+    .footer-car-container{
+        margin-top: 150rem !important;
+    }
+
 }
 
 
+//menu to tablet transtion
+@media screen and (max-width: 990px){
+    .portal-conatiner{
+        display: none !important;
+    }
+    .bg-gray-900{
+        .tablet{
+            transform: translate3d(-13rem, 10px, 10px) !important;
+        }
+        .tabletqueri2{
+            transform: translateX(-5rem)  !important;
+        }
+    }
+    .car-container{
+        transform: translate3d(5.9rem, -16rem, 1rem) !important;
+    }
+
+}
 //Google Browser
 @media screen and (max-width: 769px){
 
@@ -397,9 +513,7 @@
         .tablet{
             transform: translate3d(-12rem, 10px, 10px) !important;
         }
-        .tabletqueri2{
-            margin-left: -6rem !important;
-        }
+
 
     }
 
@@ -540,9 +654,7 @@
         }
     }
 
-    .p-autocomplete {
-        transform: translate3d(9rem, 7rem, 1rem) !important;
-    }
+
     .more-info{
         transform: translate3d(-3rem, 1.3rem, 1rem) !important;
 
@@ -564,7 +676,24 @@
     .hide-for-mobile{
         display: none !important;
     }
+     //Car section
+     .nav-bar-under{
+        height: 13rem !important;
+        .p-autocomplete{
+            transform: translate3d(17.5rem, 9rem, 1rem) !important;
+        }
+        .sort{
+            transform: translate3d(-0.2rem, -1rem, 1rem) !important;
+        }
+    }
+    .car-container{
 
+        .sports-cars{
+            .car{
+                width: 42% !important;
+            }
+        }
+    }
 
 
 
@@ -588,7 +717,7 @@
             }
             p{
                 margin-top: 15rem !important;
-                margin-left: 6rem !important;
+
             }
         }
     }
@@ -678,12 +807,12 @@
                 z-index: 3 !important;
             }
             .p-calendar{
-                transform: translate3d(0rem, 3rem, 1rem) !important;
-                width: 94% !important;
+                transform: translate3d(0.8rem, 3rem, 1rem) !important;
+                width: 87% !important;
                 z-index: 2 !important;
             }
             #returntime{
-                transform: translate3d(0rem, 5rem, 1rem) !important;
+                transform: translate3d(0.8rem, 5rem, 1rem) !important;
                 z-index: 1 !important;
             }
             a{

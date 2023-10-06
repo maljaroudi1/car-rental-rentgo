@@ -19,8 +19,8 @@ export default function Carousal() {
     <>
 
 
-      <h1 className="carousal-title">Cars of the month</h1>
-
+      <h1 className="carousal-title hide-for-tablet">Explore Our Top Deals</h1>
+      <h1 className="carousal-title hide-for-laptop">Car of the month</h1>
         <div className="parent-container">
             <div className="cars-for-tablets hide-for-laptop">
                         <Cars

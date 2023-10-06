@@ -22,6 +22,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -42,6 +43,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -62,6 +64,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -83,6 +86,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -104,6 +108,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
 
@@ -126,6 +131,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -147,6 +153,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -168,6 +175,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -189,6 +197,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -210,6 +219,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -231,6 +241,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -252,6 +263,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -273,6 +285,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'AWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -294,6 +307,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     } ,
     {
@@ -315,6 +329,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -336,6 +351,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     },
     {
@@ -357,6 +373,7 @@ const carData = [
         carLiterKM:'10L/100KM',
         carDrivetrain: 'RWD',
         classForCarContainer: 'custom-info-container',
+        classForInfo2: 'classForInfo2',
         buttonName: 'Rent now'
     }
 

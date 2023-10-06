@@ -141,7 +141,7 @@ export default function  carContainer()   {
                             onChange={(e) => setSortByDecAcen(e.value)}
                             options={sortByCarAcen2.map((option) => option.label)}
                             className="select-btn sort"
-                            style={{ transform: " translateY(-5rem)" , marginLeft: '90rem'}}
+                            style={{ transform: "translate3d(37rem,-5rem,1rem)" }}
                             />
 
                     </div>
@@ -294,6 +294,7 @@ export default function  carContainer()   {
                                     carLiterKM={car.carLiterKM}
                                     carPassengers={car.carPassengers}
                                     carDrivetrain={car.carDrivetrain}
+                                    classForInfo2={car.classForInfo2}
                                     buttonName={car.buttonName}
                                    />
 

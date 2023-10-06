@@ -105,6 +105,21 @@
   .hide-for-laptop {
     display: none !important;
   }
+  .nav-bar-under .sort {
+    transform: translate3d(33rem, -5rem, 1rem) !important;
+  }
+  .car-container {
+    transform: translate3d(8.5rem, -19rem, 1rem) !important;
+  }
+  .car-container .sports-cars .car {
+    width: 30% !important;
+  }
+  .car-container .sports-cars .car .responsive-line {
+    margin-left: 4.5rem !important;
+  }
+  .car-container .sports-cars .car .info-container {
+    margin-left: -1.5rem !important;
+  }
 }
 @media screen and (max-width: 1280px) {
   .portal-conatiner .custom-btn {
@@ -186,6 +201,30 @@
     width: 14rem !important;
     height: 3.5rem !important;
   }
+  .nav-bar-under {
+    height: 13rem !important;
+  }
+  .nav-bar-under .p-autocomplete {
+    transform: translate3d(33.5rem, 9rem, 1rem) !important;
+  }
+  .nav-bar-under .sort {
+    transform: translate3d(-0.2rem, -1rem, 1rem) !important;
+  }
+  .car-container .sports-cars .car .responsive-line {
+    margin-left: 3.5rem !important;
+  }
+  .car-container .sports-cars .car .info-container {
+    margin-left: -1.6rem !important;
+  }
+  .car-container .sports-cars .car .info-container .info svg {
+    transform: translate3d(0.4rem, -1.7rem, 1rem) !important;
+  }
+  .car-container .sports-cars .car .info-container .info h6 {
+    font-size: 0.75rem !important;
+  }
+  .car-container .sports-cars .car .classForInfo2 {
+    transform: translate3d(10rem, -7.5rem, 1rem) !important;
+  }
 }
 @media screen and (max-width: 1024px) {
   .portal-conatiner .custom-btn {
@@ -208,6 +247,9 @@
   }
   .hide-for-laptop {
     display: grid !important;
+  }
+  .hide-for-tablet {
+    display: none !important;
   }
   .hero .container {
     transform: translate3d(19rem, 57rem, 1rem) !important;
@@ -249,6 +291,41 @@
   .cars-for-tablets .car .info-container .info svg {
     transform: translate3d(0rem, -1.7rem, 1rem) !important;
   }
+  .nav-bar-under {
+    width: 104% !important;
+  }
+  .nav-bar-under .p-autocomplete {
+    transform: translate3d(26rem, 9rem, 1rem) !important;
+  }
+  .car-container {
+    transform: translate3d(5.9rem, -25rem, 1rem) !important;
+  }
+  .car-container .sports-cars .car {
+    width: 42% !important;
+  }
+  .car-container .sports-cars .car .classForInfo2 {
+    transform: translate3d(11rem, -7.5rem, 1rem) !important;
+  }
+  .car-container .sports-cars .car .responsive-line {
+    margin-left: 4rem !important;
+  }
+  .footer-car-container {
+    margin-top: 150rem !important;
+  }
+}
+@media screen and (max-width: 990px) {
+  .portal-conatiner {
+    display: none !important;
+  }
+  .bg-gray-900 .tablet {
+    transform: translate3d(-13rem, 10px, 10px) !important;
+  }
+  .bg-gray-900 .tabletqueri2 {
+    transform: translateX(-5rem) !important;
+  }
+  .car-container {
+    transform: translate3d(5.9rem, -16rem, 1rem) !important;
+  }
 }
 @media screen and (max-width: 769px) {
   .portal-conatiner {
@@ -256,9 +333,6 @@
   }
   .bg-gray-900 .tablet {
     transform: translate3d(-12rem, 10px, 10px) !important;
-  }
-  .bg-gray-900 .tabletqueri2 {
-    margin-left: -6rem !important;
   }
   .change-width-media768 {
     width: 100%;
@@ -363,9 +437,6 @@
   .car-name .more-info {
     transform: translate3d(-3rem, 0.3rem, 1rem) !important;
   }
-  .p-autocomplete {
-    transform: translate3d(9rem, 7rem, 1rem) !important;
-  }
   .more-info {
     transform: translate3d(-3rem, 1.3rem, 1rem) !important;
   }
@@ -383,6 +454,18 @@
   }
   .hide-for-mobile {
     display: none !important;
+  }
+  .nav-bar-under {
+    height: 13rem !important;
+  }
+  .nav-bar-under .p-autocomplete {
+    transform: translate3d(17.5rem, 9rem, 1rem) !important;
+  }
+  .nav-bar-under .sort {
+    transform: translate3d(-0.2rem, -1rem, 1rem) !important;
+  }
+  .car-container .sports-cars .car {
+    width: 42% !important;
   }
 }
 @media screen and (max-width: 600px) {
@@ -475,12 +558,12 @@
     z-index: 3 !important;
   }
   .hero .container .p-calendar {
-    transform: translate3d(0rem, 3rem, 1rem) !important;
-    width: 94% !important;
+    transform: translate3d(0.8rem, 3rem, 1rem) !important;
+    width: 87% !important;
     z-index: 2 !important;
   }
   .hero .container #returntime {
-    transform: translate3d(0rem, 5rem, 1rem) !important;
+    transform: translate3d(0.8rem, 5rem, 1rem) !important;
     z-index: 1 !important;
   }
   .hero .container a {
